@@ -1,0 +1,9 @@
+First meeting regarding Jodel Alert Project
+
+This list below are the things we went through on the meeting last week. There are'nt so much specific details, but based on these points below we are going to create the requirements.
+
+1. Receive a mail when a keyword is used in a Jodel post, then go in manually to Jodel and answer.
+2. If possible answer right away without going in to Jodel.
+3. We are gonna receive a list of all the keywords from linnestudenterna.
+4. If possible a web based interface where linnestudenterna can add/change/remove keywords.
+5. He wanted interesting information along the process 
