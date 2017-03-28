@@ -1,0 +1,75 @@
+Scenario 1 functional req. 1
+Main flow
+
+1./Jodel Alert recieved recent list of post
+2./Jodel Alert will process the post
+3./Jodel Alert will perform a scan on each post
+4./Jodel Alert will find matching keyword in post from database 
+5./Database will send away a email to the specified email database 
+
+Scenario 1.1 functional req. 1
+Alternative flow
+
+1./Jodel Alert recieved recent list of post
+2./Jodel Alert will process the post
+4./Jodel Alert will perform a scan on each post
+5./Keywords does not exist in database
+6./No response will happend
+
+Scenario 1.2 functional req. 1
+Error flow
+
+1./Jodel Alert recieved recent list of post
+2./Jodel Alert will process the post
+3./Jodel Alert will perform a scan on each post
+4./Jodel Alert picks up known keyword from database
+5./Database will try to send away a email to the specified email database 
+7./Database can not send away message due to error
+8./Session timed out 
+9./Generic respond will be generated to be send away, logged to error text
+
+Scenario 2 functional req. 2
+Main flow
+
+1./Jodel Alert restart
+2./Email and keyword list in the database will be loaded back to Jodel Alert
+
+Scenario 3 functional req. 3
+Main flow
+
+1./Manually remove existing keyword from the database text file
+2./Restart Jodel Alert
+3./Newly removed keyword will not exist on the list of keywords
+ 
+Scenario 4 functional req. 4
+Main flow
+
+1./Manually add new keyword to database text file
+2./Restart Jodel Alert
+3./Newly added keyword will be added to the list of keywords
+
+Scenario 5 functional req. 5
+Main flow
+
+1./Manually change existing keyword to database text file
+2./Restart Jodel Alert
+3./Newly added keyword will be added to the list of keywords
+
+Scenario 6 non-functional req. 1
+Main flow
+
+1./Jodel Alert request recent list of post
+2./Jodel Alert will process the post
+3./Jodel Alert will perform a scan on each post
+
+Scenario 7 non-functional req. 1.1
+Error flow
+
+1./Jodel Alert request recent list of post
+2./Jodel Alert does not get permisssion to recent list of post
+3./Jodel Alert will not process the post
+4/Jodel Alert request list of post until permission granted
+
+
+
+
