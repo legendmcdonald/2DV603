@@ -104,6 +104,23 @@
 \tableofcontents % Table of contents
 \pagenumbering{arabic}
 \newpage
+\section{Domain Analysis Document}
+\subsection{Introduction}
+Words from our customer:
+Jodel is a new anonymous social app targeting students
+and campus life. Some questions and comments posted
+there are specifically related to things that the Student
+Union deal with, i.e. questions about accommodation,
+what rules apply when writing an exam, if you need a
+student ID to get into the pubs etc. We’d love to
+comment on such questions, but they are far between
+and we haven’t got time to monitor the feeds so if
+possible it would be great to have functionality that
+could tap into the Jodel API and send e-mail alerts if
+relevant keywords show up; similar to Google Alerts or
+Meltwater.
+\\
+We are supposed to create an application that will listen for keywords entered in posts in the Jodel application, and when keyword found an email will be generated and sent to Linnéstudenterna. They will then know that a post has been made that regards Linnéstudenterna and can act upon.
 \section{Assignment 1}
 Requirements
 \\\\
@@ -121,10 +138,14 @@ Requirements
 \end{figure}
 \section{Functional requirements}
 \begin{enumerate}
-	\item When a keyword is used in a Jodel post, LNU Students will receive a mail
-	\item Keywords saved between sessions
-	\item Keywords should be able to be removed, added or changed
-	\item Email should be able to me removed, added or changed
+	\item When a keyword is used in a Jodel post, Linnestudenterna will receive a mail
+	\item Keywords should be able to be removed
+	\item Keywords should be able to be added
+	\item Keywords should be able to be changed
+	\item Added keywords saved between sessions (i.e saved on local host if you restart the app)
+	\item Recipient email should be able to be removed
+	\item Recipient email should be able to be added
+	\item Recipient email should be able to be changed
 \end{enumerate}
 \section{Non-functional requirements}
 \begin{enumerate}
