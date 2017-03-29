@@ -134,15 +134,18 @@ The customers of Linnéstudenterna are the users of Jodel. Our customer/stakehol
 The environment used will be a PC running Windows which the application will be run upon on. This computer must be up and running and online twenty-four seven in order for the application to work properly. A mail-server will run in the background of the application which will send email to the chosen recipients in case of a registered keyword gets posted.\\
 Application will be written and developed in Java. This makes it versatile and can work on all platforms needed.
 \\The application Jodel is already in place and we are going to base our work around the API of that program and create a new application. Nothing else is in place, there is no half-done project that covers this problem, so everything will be created from scratch.
+If the API is not accessible, we are going to use mitmproxy to listen to the traffic and save data which we can process in order to produce the required email.
 \subsection{Tasks and procedures currently performed}
 Today Linnéstudenterna manually checks Jodel from time to time in order to capture some of the questions and answering them, but this is too time consuming and there is no way they can monitor the feed all the time. They currently do not use any technology in aid other than the app itself.
 \subsection{Competing software}
 Jodel is kind of alone on the market with its nische, and tapping on to their feed in order to capture keywords is not something that exists right now.
+Other software that taps into feeds and derives statistics and data are Google Alert and Meltwater.
 \subsection{Product placement}
 This application can be used by Linnéstudenterna in order to connect with the students when they have questions. Other aspects that this application can cover can also be in the commercial market. \\
 Companies can tap in and scan the feed and see what is said about that company, and because Jodel is an anonymous application, people tend to say the truth, or completely the opposite. This can build a knowledge about the customers using a specific brand or a chain and companies can act upon that information in marketing campaigns or changing the way they act against customers.
 \subsection{Stakeholder's vision for the future}
 Our stakeholder's desiderata is to have a web based interface with functions like managing keywords and emails, and this application can be a start of something bigger in the future with more added functionality.
+Our customer want to be able to answer to a post directly from the web interface.
 
 \section{Problem}
 
@@ -173,5 +176,14 @@ Our stakeholder's desiderata is to have a web based interface with functions lik
 	\item App will continuously scan Jodel traffic every 15 minutes.
 	\item When a keyword has been found, email should be sent within 2 seconds
 \end{enumerate}
+\section{Participating Objects}
+Domain model containing the participating objects.\\
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=9cm]{img/ParticipatingObjects.pdf}
+	\caption{Jodel logo}
+	\label{Cisco routing}
+\end{figure}
 
 \end{document}
