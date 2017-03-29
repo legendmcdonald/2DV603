@@ -14,3 +14,4 @@
 \contentsline {section}{\numberline {4}Environment and system models}{3}
 \contentsline {section}{\numberline {5}Functional requirements}{4}
 \contentsline {section}{\numberline {6}Non-functional requirements}{4}
+\contentsline {section}{\numberline {7}Participating Objects}{4}
