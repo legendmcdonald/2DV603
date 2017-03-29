@@ -2,7 +2,7 @@ Scenario 1 functional req. 1
 Primary Actor
 Jodel Alert application
 
-Post condition
+Pre condition
 1./Jodel Alert has been started
 2./Jodel Alert has received permission for get request
 
@@ -38,7 +38,7 @@ Scenario 2 functional req. 2
 Primary Actor
 Jodel Alert application
 
-Post condition
+Pre condition
 1./Jodel Alert app will terminate
 
 Main flow
@@ -52,7 +52,7 @@ Administrator
 Secondary Actor
 Jodel Alert application
 
-Post condition
+Pre condition
 1./Database list is available and has been opened
 
 Main flow
@@ -67,7 +67,7 @@ Administrator
 Secondary Actor
 Jodel Alert application
 
-Post condition
+Pre condition
 1./Database list is available and has been opened
 
 Main flow
@@ -82,7 +82,7 @@ Administrator
 Secondary Actor
 Jodel Alert application
 
-Post condition
+Pre condition
 1./Database list is available and has been opened
 
 Main flow
@@ -94,7 +94,7 @@ Scenario 6 non-functional req. 1
 Primary Actor
 Jodel Alert application
 
-Post condition
+Pre condition
 1./Jodel Alert has been started
 
 Main flow
