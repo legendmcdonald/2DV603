@@ -176,6 +176,246 @@ Our customer want to be able to answer to a post directly from the web interface
 	\item App will continuously scan Jodel traffic every 15 minutes.
 	\item When a keyword has been found, email should be sent within 2 seconds
 \end{enumerate}
+\section{Use Cases}
+The following use cases are derived from the scenario.
+\subsection{Use Case 1}
+\textbf{Use Case 1 - Application scans and sends mail - Functional requirement 1}
+\textbf{Primary Actor}
+Jodel Alert Application
+
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Jodel Alert has been started
+	\item Jodel Alert has received permission for get request
+\end{enumerate}
+\textbf{Post condition}
+\begin{enumerate}
+	\item An email has been sent to the receiver
+\end{enumerate}
+\textbf{Post condition - Alternate scenario}
+\begin{enumerate}
+	\item An email has been sent to the receiver
+\end{enumerate}
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Jodel Jodel Alert received recent list of post
+	\item Jodel Alert will process the post
+	\item Jodel Alert will perform a scan on each post
+	\item Jodel Alert will find matching keyword in post from database 
+	\item Mail server on Jodel Alert will send away an email to the specified email recipient
+\end{enumerate}
+\textbf{Alternate scenario}
+\begin{enumerate}
+	\item Jodel Alert received recent list of post
+	\item Jodel Alert will process the post
+	\item Jodel Alert will perform a scan on each post
+	\item Keywords does not exist in database
+	\item No actions will be taken
+\end{enumerate}
+\subsection{Use Case 2}
+\textbf{Use Case 2 - Application can not send email - Functional requirement 1}
+\textbf{Primary Actor}
+Jodel Alert Application
+
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Jodel Alert has been started
+	\item Jodel Alert has received permission for get request
+\end{enumerate}
+\textbf{Post condition}
+\begin{enumerate}
+	\item An email has not been sent to the recipient
+\end{enumerate}
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Jodel Jodel Alert received recent list of post
+	\item Jodel Alert will process the post
+	\item Jodel Alert will perform a scan on each post
+	\item Jodel Alert will find matching keyword in post from database 
+	\item Mail server on Jodel Alert will try to send away an email to the specified email recipient
+	\item Mail server can not send mail due to error
+	\item Session timed out
+	\item Generic respond will be generated to be sent away, logged to error text
+\end{enumerate}
+\subsection{Use Case 3}
+\textbf{Use Case 3 - Restart application - Functional requirement 2}
+\textbf{Primary Actor}
+Jodel Alert Application
+
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Jodel Alert is running
+\end{enumerate}
+\textbf{Post condition}
+\begin{enumerate}
+	\item Jodel Alert is running again
+	\item Email and Keyword list will be loaded back to Jodel Alert
+\end{enumerate}
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 4}
+\textbf{Use Case 4 - Remove keyword - Functional requirement 3}
+\textbf{Primary Actor}
+Administrator
+
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Database list is available and has been opened
+\end{enumerate}
+\textbf{Post condition}
+\begin{enumerate}
+	\item Newly removed keyword will not exist on the list of keywords
+\end{enumerate}
+
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually remove existing keyword from the database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 5}
+\textbf{Use Case 5 - Add keyword - Functional requirement 4}
+\textbf{Primary Actor}
+Administrator
+\textbf{[Secondary Actor]}
+Jodel Alert application
+
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Database list is available and has been opened
+\end{enumerate}
+\textbf{Post condition}
+\begin{enumerate}
+	\item Newly added keyword will be added to the list of keywords
+\end{enumerate}
+
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually add new keyword to database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 6}
+\textbf{Use Case 6 - Change keyword - Functional requirement 5}
+\textbf{Primary Actor}
+Administrator
+\textbf{[Secondary Actor]}
+Jodel Alert application
+
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Database list is available and has been opened
+\end{enumerate}
+\textbf{Post condition}
+\begin{enumerate}
+	\item Newly changed keyword will be changed in database text file
+\end{enumerate}
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually change existing keyword to database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 7}
+\textbf{Use Case 7 - Scan Jodel Traffic - Non Functional requirement 1}
+\textbf{Primary Actor}
+Jodel Alert application
+
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Jodel Alert has been started
+\end{enumerate}
+\textbf{Post condition}
+\begin{enumerate}
+	\item Jodel Alert has scanned each post
+\end{enumerate}
+\textbf{Post condition - Alternative flow}
+\begin{enumerate}
+	\item Jodel Alert has not scanned each post
+\end{enumerate}
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Jodel Alert request recent list of post
+	\item Jodel Alert will process the post
+	\item Jodel Alert will perform a scan on each post
+\end{enumerate}
+\textbf{Alternate scenario}
+\begin{enumerate}
+	\item Jodel Alert request recent list of post
+	\item Jodel Alert does not get permisssion to recent list of post
+	\item Jodel Alert will not process the post
+	\item Jodel Alert request list of post until permission granted
+\end{enumerate}
+
+\subsection{Use Case 8}
+\textbf{Use Case 8 - Remove email recipient - Functional requirement 7}
+\textbf{Primary Actor}
+Administrator
+\textbf{[Secondary Actor]}
+Jodel Alert application
+
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Database list is available and has been opened
+\end{enumerate}
+\textbf{Post condition}
+\begin{enumerate}
+	\item Newly removed email recipient will be removed from the database text file
+\end{enumerate}
+
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually remove email recipient from database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 9}
+\textbf{Use Case 9 - Add email recipient - Functional requirement 8}
+\textbf{Primary Actor}
+Administrator
+\textbf{[Secondary Actor]}
+Jodel Alert application
+
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Database list is available and has been opened
+\end{enumerate}
+\textbf{Post condition}
+\begin{enumerate}
+	\item Newly added email recipient will be added to the database text file
+\end{enumerate}
+
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually add email recipient to database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 10}
+\textbf{Use Case 10 - Change email recipient - Functional requirement 9}
+\textbf{Primary Actor}
+Administrator
+\textbf{[Secondary Actor]}
+Jodel Alert application
+
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Database list is available and has been opened
+\end{enumerate}
+\textbf{Post condition}
+\begin{enumerate}
+	\item Newly changed email recipient will be changed in the database text file
+\end{enumerate}
+
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually change email recipient to database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+
 \section{Participating Objects}
 Domain model containing the participating objects.\\
 
