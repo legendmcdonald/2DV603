@@ -1,0 +1,7 @@
+Scenario
+
+A Jodel user will make a post on the Jodel app. Once this post is submitted the Jodel Alert app will recieve an access token to be able to scan the post for any specified keywords from a matching database. If a keyword is found, the Jodel Alert app will send an email to the administrator which contains the keyword used and the content of the post in which it was used. If any errors occur they will be logged and an email will be sent to the list of emails in the database.
+
+Scenario
+
+If the administrator of the Jodel Alert app would like to add/remove keywords, they can access the database manually and perform the changes there. The same goes for adding or removing the list of email addresses that will recieve notification when a matching keyword is found.
