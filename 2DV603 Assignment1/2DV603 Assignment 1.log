@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  30 MAR 2017 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  28 APR 2017 15:56
 entering extended mode
 **"2DV603 Assignment 1.tex"
 ("2DV603 Assignment 1.tex"
@@ -505,7 +505,11 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 
-("2DV603 Assignment 1.aux")
+("2DV603 Assignment 1.aux"
+
+LaTeX Warning: Label `Participating objects' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
@@ -519,8 +523,7 @@ LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 94.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -669,237 +672,251 @@ Package pdftex.def Info: img/scenario1.png used on input line 157.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3] [4 <./img/scenario1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 181--185
+Underfull \hbox (badness 10000) in paragraph at lines 180--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--194
+Underfull \hbox (badness 10000) in paragraph at lines 188--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--194
+Underfull \hbox (badness 10000) in paragraph at lines 188--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--194
+Underfull \hbox (badness 10000) in paragraph at lines 188--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--194
+Underfull \hbox (badness 10000) in paragraph at lines 188--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--214
+Underfull \hbox (badness 10000) in paragraph at lines 209--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--221
+Underfull \hbox (badness 10000) in paragraph at lines 217--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--221
+Underfull \hbox (badness 10000) in paragraph at lines 217--220
 
  []
 
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 232--238
+Underfull \hbox (badness 10000) in paragraph at lines 231--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--238
+Underfull \hbox (badness 10000) in paragraph at lines 231--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--238
+Underfull \hbox (badness 10000) in paragraph at lines 231--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--256
+Underfull \hbox (badness 10000) in paragraph at lines 247--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--256
+Underfull \hbox (badness 10000) in paragraph at lines 247--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--256
+Underfull \hbox (badness 10000) in paragraph at lines 247--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--256
+Underfull \hbox (badness 10000) in paragraph at lines 247--255
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 262--272
+Underfull \hbox (badness 10000) in paragraph at lines 261--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--272
+Underfull \hbox (badness 10000) in paragraph at lines 261--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--272
+Underfull \hbox (badness 10000) in paragraph at lines 261--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--272
+Underfull \hbox (badness 10000) in paragraph at lines 261--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--288
+Underfull \hbox (badness 10000) in paragraph at lines 277--287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--288
+Underfull \hbox (badness 10000) in paragraph at lines 277--287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--288
+Underfull \hbox (badness 10000) in paragraph at lines 277--287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--288
+Underfull \hbox (badness 10000) in paragraph at lines 277--287
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 294--304
+Underfull \hbox (badness 10000) in paragraph at lines 293--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--304
+Underfull \hbox (badness 10000) in paragraph at lines 293--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--304
+Underfull \hbox (badness 10000) in paragraph at lines 293--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--304
+Underfull \hbox (badness 10000) in paragraph at lines 293--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--327
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--327
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--327
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
 
  []
 
 [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 335--345
+Underfull \hbox (badness 10000) in paragraph at lines 334--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--345
+Underfull \hbox (badness 10000) in paragraph at lines 334--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--345
+Underfull \hbox (badness 10000) in paragraph at lines 334--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--345
+Underfull \hbox (badness 10000) in paragraph at lines 334--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--361
+Underfull \hbox (badness 10000) in paragraph at lines 350--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--361
+Underfull \hbox (badness 10000) in paragraph at lines 350--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--361
+Underfull \hbox (badness 10000) in paragraph at lines 350--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--361
+Underfull \hbox (badness 10000) in paragraph at lines 350--360
 
  []
 
 [9
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+] <img/scenarioadmin.png, id=43, 362.35374pt x 105.39375pt>
+File: img/scenarioadmin.png Graphic file (type png)
+
+<use img/scenarioadmin.png>
+Package pdftex.def Info: img/scenarioadmin.png used on input line 368.
+(pdftex.def)             Requested size: 293.47728pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
-<img/ParticipatingObjects.pdf, id=43, 484.81125pt x 299.1175pt>
+<img/ParticipatingObjects.pdf, id=44, 484.81125pt x 299.1175pt>
 File: img/ParticipatingObjects.pdf Graphic file (type pdf)
 
 <use img/ParticipatingObjects.pdf>
-Package pdftex.def Info: img/ParticipatingObjects.pdf used on input line 371.
+Package pdftex.def Info: img/ParticipatingObjects.pdf used on input line 377.
 (pdftex.def)             Requested size: 415.07274pt x 256.0748pt.
 
-<img/jodel.png, id=44, 301.125pt x 301.125pt>
+<img/jodel.png, id=45, 301.125pt x 301.125pt>
 File: img/jodel.png Graphic file (type png)
  <use img/jodel.png>
-Package pdftex.def Info: img/jodel.png used on input line 377.
+Package pdftex.def Info: img/jodel.png used on input line 383.
 (pdftex.def)             Requested size: 170.72406pt x 170.71652pt.
- [10
 
- <./img/ParticipatingObjects.pdf> <./img/jodel.png>] ("2DV603 Assignment 1.aux"
-) ) 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10
+
+ <./img/scenarioadmin.png> <./img/ParticipatingObjects.pdf>] [11 <./img/jodel.p
+ng>] ("2DV603 Assignment 1.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5184 strings out of 493673
- 71565 string characters out of 3141520
- 168453 words of memory out of 3000000
- 8401 multiletter control sequences out of 15000+200000
+ 5189 strings out of 493673
+ 71685 string characters out of 3141520
+ 168492 words of memory out of 3000000
+ 8405 multiletter control sequences out of 15000+200000
  36827 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  37i,12n,39p,867b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "2DV603 Assignment 1.pdf" (11 pages, 851809 bytes).
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "2DV603 Assignment 1.pdf" (12 pages, 865902 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

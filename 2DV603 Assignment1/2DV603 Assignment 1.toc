@@ -25,4 +25,5 @@
 \contentsline {subsection}{\numberline {5.8}Use Case 8}{8}
 \contentsline {subsection}{\numberline {5.9}Use Case 9}{9}
 \contentsline {subsection}{\numberline {5.10}Use Case 10}{9}
-\contentsline {section}{\numberline {6}Participating Objects}{10}
+\contentsline {section}{\numberline {6}Admin Scenario}{10}
+\contentsline {section}{\numberline {7}Participating Objects}{10}

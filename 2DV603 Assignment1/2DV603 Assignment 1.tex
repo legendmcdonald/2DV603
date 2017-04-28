@@ -160,18 +160,17 @@ If the administrator of the Jodel Alert app would like to add/remove keywords, t
 \section{Functional requirements}
 \begin{enumerate}
 	\item When a keyword is used in a Jodel post, Linnestudenterna will receive a mail
-	\item The application will request Jodel posts.
-	\item Keywords should be able to be removed
-	\item Keywords should be able to be added
-	\item Keywords should be able to be changed
+	\item The application will request Jodel posts every 15 minutes.
+	\item Keywords must be able to be removed
+	\item Keywords must be able to be added
+	\item Keywords must be able to be changed
 	\item Added keywords saved between sessions (i.e saved on local host if you restart the app)
-	\item Recipient email should be able to be removed
-	\item Recipient email should be able to be added
-	\item Recipient email should be able to be changed
+	\item Recipient email must be able to be removed
+	\item Recipient email must be able to be added
+	\item Recipient email must be able to be changed
 \end{enumerate}
 \section{Non-functional requirements}
 \begin{enumerate}
-	\item App will continuously scan Jodel traffic every 15 minutes.
 	\item When a keyword has been found, email should be sent within 2 seconds
 \end{enumerate}
 \clearpage
@@ -363,6 +362,13 @@ Newly changed email recipient will be changed in the database text file\\\\
 	\item Restart Jodel Alert
 \end{enumerate}
 \clearpage
+\section{Admin Scenario}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=3cm]{img/scenarioadmin.png}
+	\caption{Admin Scenario}
+	\label{Participating objects}
+\end{figure}
 \section{Participating Objects}
 Domain model containing the participating objects.\\
 
