@@ -1,0 +1,4 @@
+Scan class, sends objects to convert class
+Notify class will send email to the recipient
+Convert class that converts the jodel posts into json-objects, this class
+will also send the converted objects to the notify class
