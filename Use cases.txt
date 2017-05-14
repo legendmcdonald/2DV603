@@ -6,27 +6,29 @@ Jodel Alert application
 Primary Actor
 Jodel Alert user
 
-Pre condition
-Jodel Alert will get permission for get request
-
 Post condition 
 Recipient will receive a mail from Jodel Alert
 
 Main success scenario
 1./Jodel Alert has been started
-2./Jodel Alert recieved recent list of post
-3./Jodel Alert will process the post
-4./Jodel Alert will perform a scan on each post
-5./Jodel Alert will find matching keyword in post from database 
-6./Database will send away a email to the specified email database 
+2. Jodel Alert request recent list of post 
+3./Jodel Alert recieved recent list of post
+4./Jodel Alert will process the post
+5./Jodel Alert will perform a scan on each post
+6./Jodel Alert will find matching keyword in post from database 
+7./Database will send away a email to the specified email database 
 
 Alternative scenario
-4a/.Keywords does not exist in database
+3a./Jodel Alert does not get permission for recent list of post
+
+	1.Jodel Alert will wait a few moments before attempting to request again
+
+6a/.Keywords does not exist in database
 	
 	1.No further action will be taken
 
 Error scenario
-5a./Database will try to send away a email to the specified email database 
+7a./Database will try to send away a email to the specified email database 
 	
 	1.Database can not send away message due to error
 	2.Session timed out 
