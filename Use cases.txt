@@ -3,17 +3,22 @@ ID req. 1, 12
 Scope
 Jodel Alert application
 
+Primary Actor
+Jodel Alert user
+
 Pre condition
-1./Jodel Alert has been started
-2./Jodel Alert request permission for recent list of post
-3./Jodel Alert has received permission for get request
+Jodel Alert will get permission for get request
+
+Post condition 
+Recipient will receive a mail from Jodel Alert
 
 Main success scenario
-1./Jodel Alert recieved recent list of post
-2./Jodel Alert will process the post
-3./Jodel Alert will perform a scan on each post
-4./Jodel Alert will find matching keyword in post from database 
-5./Database will send away a email to the specified email database 
+1./Jodel Alert has been started
+2./Jodel Alert recieved recent list of post
+3./Jodel Alert will process the post
+4./Jodel Alert will perform a scan on each post
+5./Jodel Alert will find matching keyword in post from database 
+6./Database will send away a email to the specified email database 
 
 Alternative scenario
 4a/.Keywords does not exist in database
@@ -55,26 +60,6 @@ Alternative scenario
 
 	3b. User select add keyword/email
 	3c. User select change keyword/email
-
-Scenario 6 non-functional 
-ID req. 2
-Scope
-Jodel Alert application
-
-Pre condition
-1./Jodel Alert has been started
-
-Main success scenario
-1./Jodel Alert request recent list of post
-2./Jodel Alert will process the post
-3./Jodel Alert will perform a scan on all new post
-
-Error scenario
-2a./Jodel Alert does not get permisssion to recent list of post
-	
-	1.Jodel Alert will not process the post
-	2.Jodel Alert request list of post until permission granted
-
 
 
 
