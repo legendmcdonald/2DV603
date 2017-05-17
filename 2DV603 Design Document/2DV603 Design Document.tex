@@ -1,0 +1,357 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[swedish,english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{dtklogos}
+\usepackage{wallpaper}
+\usepackage[absolute]{textpos}
+\usepackage[top=2cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+\usepackage{appendix}
+\usepackage[nottoc]{tocbibind}
+%\usepackage{setspace}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{14}{15}\selectfont}
+\subsectionfont{\fontsize{12}{15}\selectfont}
+\subsubsectionfont{\fontsize{12}{15}\selectfont}
+
+\usepackage{csquotes} % Used to handle citations
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}  
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+
+%----------------------------------------------------------------------------------------
+%	
+%----------------------------------------------------------------------------------------
+\newsavebox{\mybox}
+\newlength{\mydepth}
+\newlength{\myheight}
+
+\newenvironment{sidebar}%
+{\begin{lrbox}{\mybox}\begin{minipage}{\textwidth}}%
+{\end{minipage}\end{lrbox}%
+ \settodepth{\mydepth}{\usebox{\mybox}}%
+ \settoheight{\myheight}{\usebox{\mybox}}%
+ \addtolength{\myheight}{\mydepth}%
+ \noindent\makebox[0pt]{\hspace{-20pt}\rule[-\mydepth]{1pt}{\myheight}}%
+ \usebox{\mybox}}
+
+%----------------------------------------------------------------------------------------
+%	Title section
+%----------------------------------------------------------------------------------------
+\newcommand\BackgroundPic{
+    \put(-2,-3){
+    \includegraphics[keepaspectratio,scale=0.3]{img/lnu_etch.png} % Background picture
+    }
+}
+\newcommand\BackgroundPicLogo{
+    \put(30,740){
+    \includegraphics[keepaspectratio,scale=0.10]{img/logo.png} % Logo in upper left corner
+    }
+}
+
+\title{	
+\vspace{-8cm}
+\begin{sidebar}
+    \vspace{10cm}
+    \normalfont \normalsize
+    \Huge Assignment 1: Jodel Alert \\
+    \vspace{-1.3cm}
+\end{sidebar}
+\vspace{3cm}
+\begin{flushleft}
+    \huge Software Engineering - Design\\ 
+    \it \LARGE - 2DV603
+\end{flushleft}
+\null
+\vfill
+\begin{textblock}{6}(10,12)
+\begin{flushright}
+\begin{minipage}{\textwidth}
+\begin{flushleft} \large
+\emph{Name:} Patrik Hermansson\\ % Author
+\emph{Email:} ph222md@student.lnu.se\\
+\emph{Name:} Michael Wagnberg\\ % Author
+\emph{Email:} mw222uu@student.lnu.se\\
+\emph{Name:} Benjamin Svärd\\ % Author
+\emph{Email:} bs222et@student.lnu.se\\
+\emph{Name:} Christofer Nguyen\\ % Author
+\emph{Email:} cn222hn@student.lnu.se\\
+\emph{Name:} Jonathan Walkden\\ % Author
+\emph{Email:} jw222qi@student.lnu.se\\
+\end{flushleft}
+\end{minipage}
+\end{flushright}
+\end{textblock}
+}
+
+\date{} 
+\newpage
+\begin{document}
+\pagenumbering{gobble}
+\newgeometry{left=5cm}
+\AddToShipoutPicture*{\BackgroundPic}
+\AddToShipoutPicture*{\BackgroundPicLogo}
+\maketitle
+\restoregeometry
+\selectlanguage{english}
+\pagenumbering{gobble}
+\newpage
+\tableofcontents % Table of contents
+\pagenumbering{arabic}
+\newpage
+\section{Design Document}
+\subsection{Purpose}
+This document will describe the entire design and decisions as well as  rationales regarding Jodel application API, work-arounds, client-server and core functionality and vital parts of Jodel Alert.
+
+
+\subsection{General priorities}
+One of our highest priorities is simplicity. The core problem we are trying to solve, the project idéa, is in itself simple and small, which makes it reasonable to design everything with simplicity in our minds. The alert that raises awareness of a post that Linnéstudenterna is interested in is the important result. There are several ways to accomplish that, you can have an advanced GUI for the customer, or different ways to change the properties of keywords and email. We have designed everything to just solve the core problem, the alert. The Jodel Alert will run in the background on a server, and send alerts (emails) when keywords found. We have also focused on reuseability as a priority in our design, this is merely because of our projects uniqueness on the Jodel application. Everything will be general and not suited just for our customer, this makes other companies potential customers.
+
+
+The customers of Linnéstudenterna are the users of Jodel. Our customer/stakeholder is Linnéstudenterna. Our customer has ordered an application to handle relationship with the students asking questions on Jodel.
+\subsection{Design issues}
+One of the first things that had to be resolved was of course the Jodel API. We did not know if that API was open or not accessible for the general public. We planned accordingly to cover both situations, so we were ready to design with the API or without. After several tries of contacting the developers of Jodel we understood that no answer would arrive.
+
+The environment used will be a PC running Windows which the application will be run upon on. This computer must be up and running and online twenty-four seven in order for the application to work properly. A mail-server will run in the background of the application which will send email to the chosen recipients in case of a registered keyword gets posted.\\
+Application will be written and developed in Java. This makes it versatile and can work on all platforms needed.
+\\The application Jodel is already in place and we are going to base our work around the API of that program and create a new application. Nothing else is in place, there is no half-done project that covers this problem, so everything will be created from scratch.
+If the API is not accessible, we are going to use mitmproxy to listen to the traffic and save data which we can process in order to produce the required email.
+\subsection{Tasks and procedures currently performed}
+Today Linnéstudenterna manually checks Jodel from time to time in order to capture some of the questions and answering them, but this is too time consuming and there is no way they can monitor the feed all the time. They currently do not use any technology in aid other than the app itself.
+\subsection{Competing software}
+Jodel is kind of alone on the market with its nische, and tapping on to their feed in order to capture keywords is not something that exists right now.
+Other software that taps into feeds and derives statistics and data are Google Alert and Meltwater.
+\subsection{Product placement}
+This application can be used by Linnéstudenterna in order to connect with the students when they have questions. Other aspects that this application can cover can also be in the commercial market. \\
+Companies can tap in and scan the feed and see what is said about that company, and because Jodel is an anonymous application, people tend to say the truth, or completely the opposite. This can build a knowledge about the customers using a specific brand or a chain and companies can act upon that information in marketing campaigns or changing the way they act against customers.
+\subsection{Stakeholder's vision for the future}
+Our stakeholder's desiderata is to have a web based interface with functions like managing keywords and emails, and this application can be a start of something bigger in the future with more added functionality.
+Our customer want to be able to answer to a post directly from the web interface.
+\section{Scenarios}
+These scenarios are based on the meeting we had with our customer.
+\subsection{Scenario 1}
+A Jodel user will make a post on the Jodel app. Once this post is submitted the Jodel Alert app will recieve an access token to be able to scan the post for any specified keywords from a matching database. If a keyword is found, the Jodel Alert app will send an email to the administrator which contains the keyword used and the content of the post in which it was used. If any errors occur they will be logged and an email will be sent to the list of emails in the database.
+\subsection{Scenario 2}
+If the administrator of the Jodel Alert app would like to add/remove keywords, they can access the database manually and perform the changes there. The same goes for adding or removing the list of email addresses that will recieve notification when a matching keyword is found.
+\section{Functional requirements}
+\begin{enumerate}
+	\item When a keyword is used in a Jodel post, Linnestudenterna will receive a mail
+	\item The application will request Jodel posts every 15 minutes.
+	\item Keywords must be able to be removed
+	\item Keywords must be able to be added
+	\item Keywords must be able to be changed
+	\item Added keywords saved between sessions (i.e saved on local host if you restart the app)
+	\item Recipient email must be able to be removed
+	\item Recipient email must be able to be added
+	\item Recipient email must be able to be changed
+\end{enumerate}
+\section{Non-functional requirements}
+\begin{enumerate}
+	\item When a keyword has been found, email should be sent within 2 seconds
+\end{enumerate}
+\clearpage
+\section{Use Cases}
+The following use cases are derived from the scenario.
+\subsection{Use Case 1}
+\textbf{Use Case 1 - Application scans and sends mail - Functional requirement 1}\\
+\textbf{Primary Actor:}
+Jodel Alert Application\\\\
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Jodel Alert has been started
+	\item Jodel Alert has received permission for get request
+\end{enumerate}
+\textbf{Post condition}\\\\
+An email has been sent to the receiver\\\\
+\textbf{Post condition - Alternate scenario}\\\\
+An email has been sent to the receiver\\\\
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Jodel Jodel Alert received recent list of post
+	\item Jodel Alert will process the post
+	\item Jodel Alert will perform a scan on each post
+	\item Jodel Alert will find matching keyword in post from database 
+	\item Mail server on Jodel Alert will send away an email to the specified email recipient
+\end{enumerate}
+\textbf{Alternate scenario}
+\begin{enumerate}
+	\item Jodel Alert received recent list of post
+	\item Jodel Alert will process the post
+	\item Jodel Alert will perform a scan on each post
+	\item Keywords does not exist in database
+	\item No actions will be taken
+\end{enumerate}
+\subsection{Use Case 2}
+\textbf{Use Case 2 - Application can not send email - Functional requirement 1}\\
+\textbf{Primary Actor:}
+Jodel Alert Application\\\\
+\textbf{Pre condition}
+\begin{enumerate}
+	\item Jodel Alert has been started
+	\item Jodel Alert has received permission for get request
+\end{enumerate}
+\textbf{Post condition}\\\\
+An email has not been sent to the recipient\\\\
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Jodel Jodel Alert received recent list of post
+	\item Jodel Alert will process the post
+	\item Jodel Alert will perform a scan on each post
+	\item Jodel Alert will find matching keyword in post from database 
+	\item Mail server on Jodel Alert will try to send away an email to the specified email recipient
+	\item Mail server can not send mail due to error
+	\item Session timed out
+	\item Generic respond will be generated to be sent away, logged to error text
+\end{enumerate}
+\subsection{Use Case 3}
+\textbf{Use Case 3 - Restart application - Functional requirement 2}\\
+\textbf{Primary Actor:}
+Jodel Alert Application\\\\
+\textbf{Pre condition}\\\\
+Jodel Alert is running\\\\
+\textbf{Post condition}
+\begin{enumerate}
+	\item Jodel Alert is running again
+	\item Email and Keyword list will be loaded back to Jodel Alert
+\end{enumerate}
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 4}
+\textbf{Use Case 4 - Remove keyword - Functional requirement 3}\\
+\textbf{Primary Actor:}
+Administrator\\\\
+\textbf{Pre condition}\\
+Database list is available and has been opened\\\\
+\textbf{Post condition}\\
+Newly removed keyword will not exist on the list of keywords\\\\\\
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually remove existing keyword from the database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 5}
+\textbf{Use Case 5 - Add keyword - Functional requirement 4}\\
+\textbf{Primary Actor:}
+Administrator\\\\
+\textbf{Secondary Actor:}
+Jodel Alert application\\\\
+\textbf{Pre condition}\\
+Database list is available and has been opened\\\\
+\textbf{Post condition}\\
+Newly added keyword will be added to the list of keywords\\\\
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually add new keyword to database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 6}
+\textbf{Use Case 6 - Change keyword - Functional requirement 5}\\
+\textbf{Primary Actor:}
+Administrator\\\\
+\textbf{Secondary Actor:}
+Jodel Alert application\\\\
+\textbf{Pre condition}\\
+Database list is available and has been opened\\\\
+\textbf{Post condition}\\
+Newly changed keyword will be changed in database text file\\\\
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually change existing keyword to database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+\clearpage
+\subsection{Use Case 7}
+\textbf{Use Case 7 - Scan Jodel Traffic - Non Functional requirement 1}\\
+\textbf{Primary Actor:}
+Jodel Alert application\\\\
+\textbf{Pre condition}\\
+Jodel Alert has been started\\\\
+\textbf{Post condition}\\
+Jodel Alert has scanned each post\\\\
+\textbf{Post condition - Alternative flow}\\
+Jodel Alert has not scanned each post\\\\
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Jodel Alert request recent list of post
+	\item Jodel Alert will process the post
+	\item Jodel Alert will perform a scan on each post
+\end{enumerate}
+\textbf{Alternate scenario}
+\begin{enumerate}
+	\item Jodel Alert request recent list of post
+	\item Jodel Alert does not get permisssion to recent list of post
+	\item Jodel Alert will not process the post
+	\item Jodel Alert request list of post until permission granted
+\end{enumerate}
+
+\subsection{Use Case 8}
+\textbf{Use Case 8 - Remove email recipient - Functional requirement 7}\\
+\textbf{Primary Actor:}
+Administrator\\\\
+\textbf{Secondary Actor:}
+Jodel Alert application\\\\
+\textbf{Pre condition}\\
+Database list is available and has been opened\\\\
+\textbf{Post condition}\\
+Newly removed email recipient will be removed from the database text file
+\clearpage
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually remove email recipient from database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 9}
+\textbf{Use Case 9 - Add email recipient - Functional requirement 8}\\
+\textbf{Primary Actor:}
+Administrator\\\\
+\textbf{Secondary Actor:}
+Jodel Alert application\\\\
+\textbf{Pre condition}\\
+Database list is available and has been opened\\\\
+\textbf{Post condition}\\
+Newly added email recipient will be added to the database text file\\\\
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually add email recipient to database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+
+\subsection{Use Case 10}
+\textbf{Use Case 10 - Change email recipient - Functional requirement 9}\\
+\textbf{Primary Actor:}
+Administrator\\\\
+\textbf{Secondary Actor:}
+Jodel Alert application\\\\
+\textbf{Pre condition}\\
+Database list is available and has been opened\\\\
+\textbf{Post condition}\\
+Newly changed email recipient will be changed in the database text file\\\\
+\textbf{Main scenario}
+\begin{enumerate}
+	\item Manually change email recipient to database text file
+	\item Restart Jodel Alert
+\end{enumerate}
+\clearpage
+\section{Admin Scenario}
+\section{Participating Objects}
+Domain model containing the participating objects.\\
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=6cm]{img/jodel.png}
+	\caption{Jodel logo}
+	\label{Jodel}
+\end{figure}
+
+\end{document}

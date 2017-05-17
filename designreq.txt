@@ -1,0 +1,16 @@
+Things we discussed today:
+We will be adding a GUI to make it easier to construct more and better UML Diagrams. 
+This will result in more use cases as well as better looking class diagram/sequence diagram etc
+
+
+Things that need to be done til wednesday 17/5:
+Component Diagram - Benjamin
+Design Document - Patrik
+Sequence Diagram - Jonathan
+Design Space & Class diagram - Michael
+Activity Diagram & update/add use cases - Christofer
+
+
+When doing this, think a little about the code we will write and think about applicable design patterns and architectural pattern we can use to this later.
+
+Keep track on time spent doing this, so we can add that to the time schedule document on wednesday.
