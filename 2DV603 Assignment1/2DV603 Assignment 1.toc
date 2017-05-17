@@ -17,5 +17,6 @@
 \contentsline {section}{\numberline {5}Use Cases}{5}
 \contentsline {subsection}{\numberline {5.1}Use Case 1}{5}
 \contentsline {subsection}{\numberline {5.2}Use Case 2}{6}
-\contentsline {section}{\numberline {6}Admin Scenario}{7}
-\contentsline {section}{\numberline {7}Participating Objects}{7}
+\contentsline {section}{\numberline {6}Use Case Diagram}{7}
+\contentsline {section}{\numberline {7}Admin Scenario}{8}
+\contentsline {section}{\numberline {8}Participating Objects}{8}

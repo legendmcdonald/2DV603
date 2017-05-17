@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  17 MAY 2017 13:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  17 MAY 2017 14:33
 entering extended mode
 **"2DV603 Assignment 1.tex"
 ("2DV603 Assignment 1.tex"
@@ -509,6 +509,12 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 
 LaTeX Warning: Label `Participating objects' multiply defined.
 
+
+LaTeX Warning: Label `Participating objects' multiply defined.
+
+
+LaTeX Warning: Label `Participating objects' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
@@ -721,46 +727,67 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 233.
  [6]
-<img/scenarioadmin.png, id=35, 362.35374pt x 105.39375pt>
+<img/Use_case_diagram1-JodelAlert.pdf, id=35, 887.56593pt x 467.77762pt>
+File: img/Use_case_diagram1-JodelAlert.pdf Graphic file (type pdf)
+
+<use img/Use_case_diagram1-JodelAlert.pdf>
+Package pdftex.def Info: img/Use_case_diagram1-JodelAlert.pdf used on input lin
+e 246.
+(pdftex.def)             Requested size: 485.90106pt x 256.0748pt.
+
+Overfull \hbox (59.10971pt too wide) in paragraph at lines 246--247
+ [][] 
+ []
+
+<img/Use_case_diagram2-JodelAlert.pdf, id=36, 920.43875pt x 691.31271pt>
+File: img/Use_case_diagram2-JodelAlert.pdf Graphic file (type pdf)
+
+<use img/Use_case_diagram2-JodelAlert.pdf>
+Package pdftex.def Info: img/Use_case_diagram2-JodelAlert.pdf used on input lin
+e 252.
+(pdftex.def)             Requested size: 416.72166pt x 312.9803pt.
+
+<img/scenarioadmin.png, id=37, 362.35374pt x 105.39375pt>
 File: img/scenarioadmin.png Graphic file (type png)
 
 <use img/scenarioadmin.png>
-Package pdftex.def Info: img/scenarioadmin.png used on input line 248.
+Package pdftex.def Info: img/scenarioadmin.png used on input line 259.
 (pdftex.def)             Requested size: 293.47728pt x 85.35826pt.
+ [7
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+ <./img/Use_case_diagram1-JodelAlert.pdf> <./img/Use_case_diagram2-JodelAlert.p
+df>]
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
-<img/ParticipatingObjects.pdf, id=36, 484.81125pt x 299.1175pt>
+<img/ParticipatingObjects.pdf, id=53, 484.81125pt x 299.1175pt>
 File: img/ParticipatingObjects.pdf Graphic file (type pdf)
 
 <use img/ParticipatingObjects.pdf>
-Package pdftex.def Info: img/ParticipatingObjects.pdf used on input line 257.
+Package pdftex.def Info: img/ParticipatingObjects.pdf used on input line 268.
 (pdftex.def)             Requested size: 415.07274pt x 256.0748pt.
 
-<img/jodel.png, id=37, 301.125pt x 301.125pt>
+<img/jodel.png, id=54, 301.125pt x 301.125pt>
 File: img/jodel.png Graphic file (type png)
  <use img/jodel.png>
-Package pdftex.def Info: img/jodel.png used on input line 263.
+Package pdftex.def Info: img/jodel.png used on input line 274.
 (pdftex.def)             Requested size: 170.72406pt x 170.71652pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7
-
- <./img/scenarioadmin.png> <./img/ParticipatingObjects.pdf>] [8 <./img/jodel.pn
-g>] ("2DV603 Assignment 1.aux")
+[8 <./img/scenarioadmin.png> <./img/ParticipatingObjects.pdf>] [9 <./img/jodel.
+png>] ("2DV603 Assignment 1.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5206 strings out of 493673
- 71984 string characters out of 3141520
+ 5216 strings out of 493673
+ 72374 string characters out of 3141520
  168512 words of memory out of 3000000
- 8419 multiletter control sequences out of 15000+200000
+ 8427 multiletter control sequences out of 15000+200000
  36827 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  37i,12n,39p,867b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -769,9 +796,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on "2DV603 Assignment 1.pdf" (9 pages, 878861 bytes).
+Output written on "2DV603 Assignment 1.pdf" (10 pages, 1277277 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 122 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
