@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  15 MAY 2017 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  17 MAY 2017 13:47
 entering extended mode
 **"2DV603 Design Document.tex"
 ("2DV603 Design Document.tex"
@@ -505,7 +505,14 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 
-("2DV603 Design Document.aux")
+("2DV603 Design Document.aux"
+
+LaTeX Warning: Label `Jodel' multiply defined.
+
+
+LaTeX Warning: Label `Jodel' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
@@ -519,8 +526,7 @@ LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 94.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -649,231 +655,86 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 108.
- [2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 161--165
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--174
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--174
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--174
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--174
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--194
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
-
- []
-
-[5
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 212--218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--236
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 242--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--268
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--268
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--268
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--268
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 274--284
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--284
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--284
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--284
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--307
-
- []
-
-[8
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 315--325
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 315--325
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 315--325
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 315--325
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--341
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--341
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--341
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--341
-
- []
-
-[9
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
-
- []
-
-<img/jodel.png, id=41, 301.125pt x 301.125pt>
+[2] [3] <img/jodelUML.pdf, id=22, 924.45375pt x 573.14125pt>
+File: img/jodelUML.pdf Graphic file (type pdf)
+
+<use img/jodelUML.pdf>
+Package pdftex.def Info: img/jodelUML.pdf used on input line 149.
+(pdftex.def)             Requested size: 413.03809pt x 256.0748pt.
+ [4
+
+ <./img/jodelUML.pdf>]
+<img/component_diagram.pdf, id=29, 969.6225pt x 744.7825pt>
+File: img/component_diagram.pdf Graphic file (type pdf)
+
+<use img/component_diagram.pdf>
+Package pdftex.def Info: img/component_diagram.pdf used on input line 157.
+(pdftex.def)             Requested size: 407.4754pt x 312.9803pt.
+ [5
+
+ <./img/component_diagram.pdf>]
+<img/jodel.png, id=36, 301.125pt x 301.125pt>
 File: img/jodel.png Graphic file (type png)
  <use img/jodel.png>
-Package pdftex.def Info: img/jodel.png used on input line 352.
+Package pdftex.def Info: img/jodel.png used on input line 165.
 (pdftex.def)             Requested size: 170.72406pt x 170.71652pt.
- [10
+ [6
 
- <./img/jodel.png>] ("2DV603 Design Document.aux") ) 
+ <./img/jodel.png>] ("2DV603 Design Document.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5173 strings out of 493673
- 71323 string characters out of 3141520
- 168442 words of memory out of 3000000
- 8392 multiletter control sequences out of 15000+200000
+ 5183 strings out of 493673
+ 71558 string characters out of 3141520
+ 168495 words of memory out of 3000000
+ 8400 multiletter control sequences out of 15000+200000
  36827 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 37i,12n,39p,942b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiK
-TeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw
-/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on "2DV603 Design Document.pdf" (11 pages, 657499 bytes).
+ 37i,12n,39p,870b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "2DV603 Design Document.pdf" (7 pages, 836205 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

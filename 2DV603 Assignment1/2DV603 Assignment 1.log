@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  28 APR 2017 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  17 MAY 2017 13:26
 entering extended mode
 **"2DV603 Assignment 1.tex"
 ("2DV603 Assignment 1.tex"
@@ -672,251 +672,106 @@ Package pdftex.def Info: img/scenario1.png used on input line 157.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3] [4 <./img/scenario1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 180--184
+Underfull \hbox (badness 10000) in paragraph at lines 168--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--193
+Underfull \hbox (badness 10000) in paragraph at lines 179--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--193
+Underfull \hbox (badness 10000) in paragraph at lines 179--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--193
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--193
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 217--220
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 217--220
+Underfull \hbox (badness 10000) in paragraph at lines 209--216
 
  []
 
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 231--237
+Underfull \hbox (badness 10000) in paragraph at lines 219--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--237
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--255
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--255
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--255
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--255
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 261--271
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--271
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--271
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--271
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--287
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--287
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--287
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--287
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 293--303
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--303
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--303
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--303
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--326
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--326
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--326
-
- []
-
-[8
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 334--344
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--344
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--344
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--344
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--360
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--360
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--360
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--360
-
- []
-
-[9
-
-] <img/scenarioadmin.png, id=43, 362.35374pt x 105.39375pt>
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 233.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 233.
+ [6]
+<img/scenarioadmin.png, id=35, 362.35374pt x 105.39375pt>
 File: img/scenarioadmin.png Graphic file (type png)
 
 <use img/scenarioadmin.png>
-Package pdftex.def Info: img/scenarioadmin.png used on input line 368.
+Package pdftex.def Info: img/scenarioadmin.png used on input line 248.
 (pdftex.def)             Requested size: 293.47728pt x 85.35826pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
-<img/ParticipatingObjects.pdf, id=44, 484.81125pt x 299.1175pt>
+<img/ParticipatingObjects.pdf, id=36, 484.81125pt x 299.1175pt>
 File: img/ParticipatingObjects.pdf Graphic file (type pdf)
 
 <use img/ParticipatingObjects.pdf>
-Package pdftex.def Info: img/ParticipatingObjects.pdf used on input line 377.
+Package pdftex.def Info: img/ParticipatingObjects.pdf used on input line 257.
 (pdftex.def)             Requested size: 415.07274pt x 256.0748pt.
 
-<img/jodel.png, id=45, 301.125pt x 301.125pt>
+<img/jodel.png, id=37, 301.125pt x 301.125pt>
 File: img/jodel.png Graphic file (type png)
  <use img/jodel.png>
-Package pdftex.def Info: img/jodel.png used on input line 383.
+Package pdftex.def Info: img/jodel.png used on input line 263.
 (pdftex.def)             Requested size: 170.72406pt x 170.71652pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10
+[7
 
- <./img/scenarioadmin.png> <./img/ParticipatingObjects.pdf>] [11 <./img/jodel.p
-ng>] ("2DV603 Assignment 1.aux")
+ <./img/scenarioadmin.png> <./img/ParticipatingObjects.pdf>] [8 <./img/jodel.pn
+g>] ("2DV603 Assignment 1.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5189 strings out of 493673
- 71685 string characters out of 3141520
- 168492 words of memory out of 3000000
- 8405 multiletter control sequences out of 15000+200000
+ 5206 strings out of 493673
+ 71984 string characters out of 3141520
+ 168512 words of memory out of 3000000
+ 8419 multiletter control sequences out of 15000+200000
  36827 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  37i,12n,39p,867b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "2DV603 Assignment 1.pdf" (12 pages, 865902 bytes).
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "2DV603 Assignment 1.pdf" (9 pages, 878861 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
+ 105 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
