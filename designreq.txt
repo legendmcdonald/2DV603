@@ -20,3 +20,7 @@ Keep track on time spent doing this, so we can add that to the time schedule doc
 
 Risk mitigation i design document?
 Design document hanterar enbart functional requirements?
+For each component: discuss both requires and provides interface?
+Outline of the design?
+Should we do a sequence diagram for the deletion of keywords/email even though we have one for
+creating already?

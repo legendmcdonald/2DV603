@@ -106,7 +106,7 @@
 \newpage
 \section{Design Document}
 \subsection{Purpose}
-This document will describe the entire design and decisions as well as  rationales regarding Jodel application API, work-arounds, client-server and core functionality and vital parts of Jodel Alert.
+This document will describe the entire design and decisions as well as  rationales regarding Jodel application API, work-arounds, client-server and core functionality and vital parts of Jodel Alert.\\
 
 The Jodel Alert Application will scan Jodel post feed, derive keywords desiderata and notify an email recipient(requirement ID 1). It will do this every 15 minutes (requirement ID 2). Possible failure conditions can be that Jodel Alert will not get an authenticated token, the server which Jodel Alert runs upon is down, or wrong format of email recipient. This will be handled by error messages to the user.\\
 
@@ -122,7 +122,17 @@ One of our highest priorities is simplicity. The core problem we are trying to s
 
 The alert that raises awareness of a post that Linnéstudenterna is interested in is the important result. There are several ways to accomplish that, you can have an advanced GUI for the customer, or different ways to change the properties of keywords and email. 
  
-We have designed everything to just solve the core problem, the alert. The Jodel Alert will run in the background on a server, and send alerts (emails) when keywords found. We have also focused on reuseability as a priority in our design, this is merely because of our projects uniqueness on the Jodel application. Everything will be general and not suited just for our customer, this makes other companies potential customers.
+We have designed everything to just solve the core problem, the alert. The Jodel Alert will run in the background on a server, and send alerts (emails) when keywords found. \\
+
+We have also focused on reuseability as a priority in our design, this is merely because of our projects uniqueness on the Jodel application. \\
+
+Everything will be general and not suited just for our customer, this makes other companies potential customers.\\
+
+To get our application to have high scalability, we decided to make a user and administrator mode.
+With the case of just a generic user that can change, add and remove keywords and email recipients works fine for a smaller business with maybe 5-10 employees.
+To ensure scalability we decided that we had to implement an administrator and a user system. This means that a bigger company can have a few administrators that have more privileges than the other users, which in turn results in a better maintained database of keywords and emails.\\
+
+We also wanted to design for portability. The application will be written and developed in Java. This makes it versatile, supported by multiple vendors and can work on all platforms needed.
 
 
 \subsection{Design issues}
@@ -133,11 +143,13 @@ Choosing database was another possible constraint or issue. Regarding to the tec
 
 We have choosen a design that fits a "database", and we can easily choose between a commercial database or just a plane text file, depending on difficulties and other constraints that may show up.\\
 
-Application will be written and developed in Java. This makes it versatile and can work
-on all platforms needed. This and better knowledge of the language is the rationale of choosing Java.
+
 \subsection{Outline of the design}
+(Probably not in the finished version)?
+\clearpage
+\section{Design details}
 All key components for this application is listed here.\\
-\subsection{Handle Jodel Post}
+\subsection{Activity diagram - Handle Jodel Post}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[height=13cm]{img/Activity_diagram-Handling_Jodel_post.pdf}
@@ -145,7 +157,7 @@ All key components for this application is listed here.\\
 	\label{Jodel}
 \end{figure}
 \clearpage
-\subsection{Modifying Database}
+\subsection{Activity diagram - Modifying Database}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[height=13cm]{img/Activity_diagram-Modifying_database.pdf}
@@ -154,7 +166,7 @@ All key components for this application is listed here.\\
 \end{figure}
 \clearpage
 \subsection{Constraints}
-
+(Probably not in the finished version)?
 \subsection{Design options}
 \begin{figure}[!h]
 	\centering
@@ -162,9 +174,16 @@ All key components for this application is listed here.\\
 	\caption{Jodel Alert Design Space}
 	\label{Jodel}
 \end{figure}
+User interface vs no user interface is a big difference. As we stated in requirement ID 13 the user interface should be easy to use and simple. If going for no user interface the users are forced to have a higher level of knowledge to operate the application correctly. Adding a simple keyword can mean knowledge of how databases works and maybe require other programs. With the user interface the user can add a simple keyword without knowing about the underlying backbone of our system.
+This gives the application good usability.\\
 
-\section{Risk mitigation}
+We choose an SQL database which is easier to maintain, than a plane text file. We also get the properties of using Jodel Alert Application on several machines on work and at home, which does not work if using a text file locally on the machine running the application.
+Scalability is also reached with using an SQL database.\\
+
+One of the design issues mentioned before was the use of the Jodel API. This was not open and accessible for the general public, and we did not get any response from the Jodel company. This forced us to choose the path of no API at all.
 \clearpage
+\section{Risk mitigation}
+(Probably not in the finished version)?
 \section{Class diagram}
 \begin{figure}[!h]
 	\centering
@@ -181,7 +200,22 @@ All key components for this application is listed here.\\
 	\label{Jodel}
 \end{figure}
 \clearpage
+\section{Sequence Diagram}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[height=13cm]{img/sequence_diagram1.pdf}
+	\caption{Jodel Alert Sequence Diagram}
+	\label{Jodel}
+\end{figure}
+\clearpage
+\section{After release}
+Some things is always forced to be omitted because of time, budget and other constraints.
 
+In version 2.0 of our application we would like to develop the following features:
+\begin{itemize}
+	\item Ability to post answers to Jodel directly from the GUI of Jodel Alert
+	\item Each user can have their own customized keywords
+\end{itemize}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[height=6cm]{img/jodel.png}
