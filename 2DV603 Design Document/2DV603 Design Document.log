@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  17 MAY 2017 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  17 MAY 2017 21:20
 entering extended mode
 **"2DV603 Design Document.tex"
 ("2DV603 Design Document.tex"
@@ -524,6 +524,9 @@ LaTeX Warning: Label `Jodel' multiply defined.
 
 LaTeX Warning: Label `Jodel' multiply defined.
 
+
+LaTeX Warning: Label `Jodel' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
@@ -763,14 +766,14 @@ Overfull \hbox (8.61726pt too wide) in paragraph at lines 163--164
 [5
 
  <./img/Activity_diagram-Modifying_database.pdf>]
-<img/designspace.pdf, id=42, 583.17876pt x 237.88875pt>
+<img/designspace.pdf, id=42, 681.54625pt x 237.88875pt>
 File: img/designspace.pdf Graphic file (type pdf)
 
 <use img/designspace.pdf>
 Package pdftex.def Info: img/designspace.pdf used on input line 173.
-(pdftex.def)             Requested size: 488.28287pt x 199.16928pt.
+(pdftex.def)             Requested size: 489.1218pt x 170.71652pt.
 
-Overfull \hbox (61.49152pt too wide) in paragraph at lines 173--174
+Overfull \hbox (62.33044pt too wide) in paragraph at lines 173--174
  [][] 
  []
 
@@ -787,7 +790,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--182
 [6
 
  <./img/designspace.pdf>]
-<img/jodelUML.pdf, id=95, 924.45375pt x 573.14125pt>
+<img/jodelUML.pdf, id=103, 924.45375pt x 573.14125pt>
 File: img/jodelUML.pdf Graphic file (type pdf)
  <use img/jodelUML.pdf>
 Package pdftex.def Info: img/jodelUML.pdf used on input line 190.
@@ -796,7 +799,7 @@ Package pdftex.def Info: img/jodelUML.pdf used on input line 190.
 [7
 
  <./img/jodelUML.pdf>]
-<img/component_diagram.pdf, id=102, 969.6225pt x 744.7825pt>
+<img/component_diagram.pdf, id=110, 969.6225pt x 744.7825pt>
 File: img/component_diagram.pdf Graphic file (type pdf)
 
 <use img/component_diagram.pdf>
@@ -805,7 +808,7 @@ Package pdftex.def Info: img/component_diagram.pdf used on input line 198.
  [8
 
  <./img/component_diagram.pdf>]
-<img/sequence_diagram1.pdf, id=109, 832.10875pt x 655.44875pt>
+<img/sequence_diagram1.pdf, id=117, 832.10875pt x 655.44875pt>
 File: img/sequence_diagram1.pdf Graphic file (type pdf)
 
 <use img/sequence_diagram1.pdf>
@@ -819,21 +822,33 @@ Overfull \hbox (42.7923pt too wide) in paragraph at lines 206--207
 [9
 
  <./img/sequence_diagram1.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 216.
+<img/sequence_diagram2.pdf, id=124, 568.1225pt x 492.84125pt>
+File: img/sequence_diagram2.pdf Graphic file (type pdf)
 
+<use img/sequence_diagram2.pdf>
+Package pdftex.def Info: img/sequence_diagram2.pdf used on input line 213.
+(pdftex.def)             Requested size: 426.4029pt x 369.88582pt.
+ [10
+
+ <./img/sequence_diagram2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 223.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 216.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 223.
 
-<img/jodel.png, id=116, 301.125pt x 301.125pt>
+<img/jodel.png, id=131, 301.125pt x 301.125pt>
 File: img/jodel.png Graphic file (type png)
  <use img/jodel.png>
-Package pdftex.def Info: img/jodel.png used on input line 221.
+Package pdftex.def Info: img/jodel.png used on input line 228.
 (pdftex.def)             Requested size: 170.72406pt x 170.71652pt.
- [10
+ [11
 
  <./img/jodel.png>] ("2DV603 Design Document.aux")
 
@@ -841,10 +856,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5220 strings out of 493673
- 72572 string characters out of 3141520
+ 5225 strings out of 493673
+ 72712 string characters out of 3141520
  168496 words of memory out of 3000000
- 8430 multiletter control sequences out of 15000+200000
+ 8434 multiletter control sequences out of 15000+200000
  36827 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  37i,12n,39p,870b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -853,9 +868,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on "2DV603 Design Document.pdf" (11 pages, 1831748 bytes).
+Output written on "2DV603 Design Document.pdf" (12 pages, 1896926 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
+ 152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
