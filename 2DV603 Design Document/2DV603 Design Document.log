@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  17 MAY 2017 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.11)  23 MAY 2017 14:34
 entering extended mode
 **"2DV603 Design Document.tex"
 ("2DV603 Design Document.tex"
@@ -507,25 +507,7 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 
 ("2DV603 Design Document.aux"
 
-LaTeX Warning: Label `Jodel' multiply defined.
-
-
-LaTeX Warning: Label `Jodel' multiply defined.
-
-
-LaTeX Warning: Label `Jodel' multiply defined.
-
-
-LaTeX Warning: Label `Jodel' multiply defined.
-
-
-LaTeX Warning: Label `Jodel' multiply defined.
-
-
-LaTeX Warning: Label `Jodel' multiply defined.
-
-
-LaTeX Warning: Label `Jodel' multiply defined.
+LaTeX Warning: Label `Sequence Diagram' multiply defined.
 
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
@@ -669,206 +651,223 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 108.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 147.
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 170--173
 
  []
 
 
-<img/Activity_diagram-Handling_Jodel_post.pdf, id=22, 1334.63622pt x 1150.54843
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
+
+ []
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+
+<img/Activity_diagram-Handling_Jodel_post.pdf, id=25, 1334.63622pt x 1150.54843
 pt>
 File: img/Activity_diagram-Handling_Jodel_post.pdf Graphic file (type pdf)
  <use img/Activity_diagram-Handling_Jodel_post.pdf>
 Package pdftex.def Info: img/Activity_diagram-Handling_Jodel_post.pdf used on i
-nput line 159.
+nput line 203.
 (pdftex.def)             Requested size: 429.0677pt x 369.88582pt.
 
-Overfull \hbox (2.27635pt too wide) in paragraph at lines 159--160
- [][] 
- []
-
-[4
-
- <./img/Activity_diagram-Handling_Jodel_post.pdf>]
-<img/Activity_diagram-Modifying_database.pdf, id=32, 1354.35992pt x 1150.54843p
-t>
-File: img/Activity_diagram-Modifying_database.pdf Graphic file (type pdf)
- <use img/Activity_diagram-Modifying_database.pdf>
-Package pdftex.def Info: img/Activity_diagram-Modifying_database.pdf used on in
-put line 167.
-(pdftex.def)             Requested size: 435.40862pt x 369.88582pt.
-
-Overfull \hbox (8.61726pt too wide) in paragraph at lines 167--168
+Overfull \hbox (2.27635pt too wide) in paragraph at lines 203--204
  [][] 
  []
 
 [5
 
- <./img/Activity_diagram-Modifying_database.pdf>]
-<img/designspace.pdf, id=42, 681.54625pt x 237.88875pt>
-File: img/designspace.pdf Graphic file (type pdf)
+ <./img/Activity_diagram-Handling_Jodel_post.pdf>]
+<img/Activity_diagram-Modifying_database.pdf, id=35, 1354.35992pt x 1150.54843p
+t>
+File: img/Activity_diagram-Modifying_database.pdf Graphic file (type pdf)
+ <use img/Activity_diagram-Modifying_database.pdf>
+Package pdftex.def Info: img/Activity_diagram-Modifying_database.pdf used on in
+put line 211.
+(pdftex.def)             Requested size: 435.40862pt x 369.88582pt.
 
-<use img/designspace.pdf>
-Package pdftex.def Info: img/designspace.pdf used on input line 177.
-(pdftex.def)             Requested size: 489.1218pt x 170.71652pt.
-
-Overfull \hbox (62.33044pt too wide) in paragraph at lines 177--178
+Overfull \hbox (8.61726pt too wide) in paragraph at lines 211--212
  [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
-
  []
 
 [6
 
- <./img/designspace.pdf>]
-<img/jodelUMLClassDiagram.pdf, id=103, 845.1575pt x 598.235pt>
-File: img/jodelUMLClassDiagram.pdf Graphic file (type pdf)
+ <./img/Activity_diagram-Modifying_database.pdf>]
+<img/designspace.pdf, id=46, 681.54625pt x 235.88126pt>
+File: img/designspace.pdf Graphic file (type pdf)
 
-<use img/jodelUMLClassDiagram.pdf>
-Package pdftex.def Info: img/jodelUMLClassDiagram.pdf used on input line 194.
-(pdftex.def)             Requested size: 482.3638pt x 341.43306pt.
+<use img/designspace.pdf>
+Package pdftex.def Info: img/designspace.pdf used on input line 221.
+(pdftex.def)             Requested size: 493.27121pt x 170.71652pt.
 
-Overfull \hbox (55.57245pt too wide) in paragraph at lines 194--195
+Overfull \hbox (66.47986pt too wide) in paragraph at lines 221--222
  [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
  []
 
 [7
 
- <./img/jodelUMLClassDiagram.pdf>]
-<img/component_diagram.pdf, id=110, 845.1575pt x 598.235pt>
-File: img/component_diagram.pdf Graphic file (type pdf)
-
-<use img/component_diagram.pdf>
-Package pdftex.def Info: img/component_diagram.pdf used on input line 202.
-(pdftex.def)             Requested size: 442.16681pt x 312.9803pt.
-
-Overfull \hbox (15.37546pt too wide) in paragraph at lines 202--203
- [][] 
- []
-
-[8
-
- <./img/component_diagram.pdf>]
-<img/sequence_diagram1.pdf, id=117, 832.10875pt x 655.44875pt>
-File: img/sequence_diagram1.pdf Graphic file (type pdf)
-
-<use img/sequence_diagram1.pdf>
-Package pdftex.def Info: img/sequence_diagram1.pdf used on input line 210.
-(pdftex.def)             Requested size: 469.58365pt x 369.88582pt.
-
-Overfull \hbox (42.7923pt too wide) in paragraph at lines 210--211
- [][] 
- []
-
-[9
-
- <./img/sequence_diagram1.pdf>]
-<img/sequence_diagram2.pdf, id=124, 568.1225pt x 492.84125pt>
-File: img/sequence_diagram2.pdf Graphic file (type pdf)
-
-<use img/sequence_diagram2.pdf>
-Package pdftex.def Info: img/sequence_diagram2.pdf used on input line 217.
-(pdftex.def)             Requested size: 426.4029pt x 369.88582pt.
- [10
-
- <./img/sequence_diagram2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+ <./img/designspace.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 227.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 236.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 227.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 236.
 
-<img/jodel.png, id=131, 301.125pt x 301.125pt>
+<img/jodelUMLClassDiagram.pdf, id=106, 845.1575pt x 598.235pt>
+File: img/jodelUMLClassDiagram.pdf Graphic file (type pdf)
+
+<use img/jodelUMLClassDiagram.pdf>
+Package pdftex.def Info: img/jodelUMLClassDiagram.pdf used on input line 251.
+(pdftex.def)             Requested size: 482.3638pt x 341.43306pt.
+
+Overfull \hbox (55.57245pt too wide) in paragraph at lines 251--252
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8
+
+] [9 <./img/jodelUMLClassDiagram.pdf>]
+<img/component_diagram.pdf, id=117, 845.1575pt x 598.235pt>
+File: img/component_diagram.pdf Graphic file (type pdf)
+
+<use img/component_diagram.pdf>
+Package pdftex.def Info: img/component_diagram.pdf used on input line 259.
+(pdftex.def)             Requested size: 442.16681pt x 312.9803pt.
+
+Overfull \hbox (15.37546pt too wide) in paragraph at lines 259--260
+ [][] 
+ []
+
+[10
+
+ <./img/component_diagram.pdf>]
+<img/sequence_diagram1.pdf, id=124, 832.10875pt x 655.44875pt>
+File: img/sequence_diagram1.pdf Graphic file (type pdf)
+
+<use img/sequence_diagram1.pdf>
+Package pdftex.def Info: img/sequence_diagram1.pdf used on input line 267.
+(pdftex.def)             Requested size: 469.58365pt x 369.88582pt.
+
+Overfull \hbox (42.7923pt too wide) in paragraph at lines 267--268
+ [][] 
+ []
+
+[11
+
+ <./img/sequence_diagram1.pdf>]
+<img/sequence_diagram2.pdf, id=131, 568.1225pt x 492.84125pt>
+File: img/sequence_diagram2.pdf Graphic file (type pdf)
+
+<use img/sequence_diagram2.pdf>
+Package pdftex.def Info: img/sequence_diagram2.pdf used on input line 274.
+(pdftex.def)             Requested size: 426.4029pt x 369.88582pt.
+ [12
+
+ <./img/sequence_diagram2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+ []
+
+<img/jodel.png, id=139, 301.125pt x 301.125pt>
 File: img/jodel.png Graphic file (type png)
  <use img/jodel.png>
-Package pdftex.def Info: img/jodel.png used on input line 232.
+Package pdftex.def Info: img/jodel.png used on input line 289.
 (pdftex.def)             Requested size: 170.72406pt x 170.71652pt.
- [11
+ [13
 
  <./img/jodel.png>] ("2DV603 Design Document.aux")
 
@@ -876,10 +875,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5225 strings out of 493673
- 72772 string characters out of 3141520
- 168496 words of memory out of 3000000
- 8434 multiletter control sequences out of 15000+200000
+ 5231 strings out of 493673
+ 72886 string characters out of 3141520
+ 172558 words of memory out of 3000000
+ 8440 multiletter control sequences out of 15000+200000
  36827 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  37i,12n,39p,870b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -888,9 +887,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on "2DV603 Design Document.pdf" (12 pages, 2075318 bytes).
+Output written on "2DV603 Design Document.pdf" (14 pages, 2072806 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
+ 159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -104,6 +104,45 @@
 \tableofcontents % Table of contents
 \pagenumbering{arabic}
 \newpage
+\begin{tabular}[!h]{|c|c|c|p{5cm}|}
+	\hline
+	Revision & Author & Date & Changes \\
+	\hline
+	1 & Patrik Hermansson & 2017-04-07 & Created the document \\
+	\hline
+	1.1 & Patrik Hermansson & 2017-04-10 & Outline of Purpose and General Priorities \\
+	\hline
+	1.2 & Patrik Hermansson & 2017-04-18 & Rewrote some of the purpose with revised requirements \\
+	\hline
+	1.3 & Patrik Hermansson & 2017-04-24 & Design issues started to show, updated document \\
+	\hline
+	2 & Benjamin Kangur Swärd & 2017-04-26 & Added Class diagram \\
+	\hline
+	2.1 & Benjamin Kangur Swärd & 2017-04-26 & Added Component diagram \\
+	\hline
+	2.2 & Benjamin Kangur Swärd & 2017-04-29 & Added security and GUI to class diagram \\
+	\hline
+	3 & Michael Wagnberg & 2017-05-05 & Added Design Space according to our design options \\
+	\hline
+	3.1 & Christofer Nguyen & 2017-05-05 & Added Activity Diagram for modifying database \\
+	\hline
+	3.2 & Christofer Nguyen & 2017-05-05 & Added Activity Diagram for handling jodel post \\
+	\hline
+	3.3 & Michael Wagnberg & 2017-05-08 & Added GUI to Design Space \\
+	\hline
+	4 & Jonathan Walkden & 2017-05-10 & Added Sequence Diagram for main post alert sequence \\
+	\hline
+	4.1 &Jonathan Walkden & 2017-05-13 & Added Sequence Diagram for keyword creation \\
+	\hline
+	4.2 & Patrik Hermansson & 2017-05-13 & Wrote design options \\
+	\hline
+	4.3 & Patrik Hermansson & 2017-05-15 & Developers desiderata and after release \\
+	\hline
+	5 & Michael Wagnberg & 2017-05-19 & MVC vs Pipe-and-Filter \\
+	\hline
+	
+	
+\end{tabular}
 \section{Design Document}
 \subsection{Purpose}
 This document will describe the entire design and decisions as well as  rationales regarding Jodel application API, work-arounds, client-server and core functionality and vital parts of Jodel Alert.\\
@@ -139,13 +178,18 @@ We also wanted to design for portability. The application will be written and de
 One of the first things that had to be resolved was of course the Jodel API. We did not know if that API was open or not accessible for the general public. We planned accordingly to cover both situations, so we were ready to design with the API or without. \\
 
 After several tries of contacting the developers of Jodel we understood that no answer would arrive. Instead we moved towards a program called mitmproxy, that deals with listening to the traffic from Jodel by imitating an ordinary client cellphone. We can then extract that data and use it in our favour.\\
+
 Choosing database was another possible constraint or issue. Regarding to the technical aspect, maybe no one in the group have competence to use a powerful database (like MySQL) in collaboration with the never used program mitmproxy. Another aspect is budget and time for implementing MySQL as a database.  \\
 
 We have choosen a design that fits a "database", and we can easily choose between a commercial database or just a plane text file, depending on difficulties and other constraints that may show up.\\
 
 
 \subsection{Outline of the design}
-(Probably not in the finished version)?
+We use a top-down design where we at a very high level develop the design of the system in order to ensure that we actually conform to the requirements given by the customer in order to solve it's problems. \\
+We have decided about an MVC architecture and using MySQL as a database.\\ 
+
+Very early in to the design phase we decided that we are going to separate the user interface from the rest of the system, which ensures a flexible and maintainable design.
+
 \clearpage
 \section{Design details}
 The UML use cases describe the systems behaviour and what each case intends to achieve. This UML design phase is implemented to achieve for both stakeholders and project members an understanding for how the applications functions will work together with the end-user.  \\
@@ -158,7 +202,7 @@ All key components for this application is listed here.\\
 	\centering
 	\includegraphics[height=13cm]{img/Activity_diagram-Handling_Jodel_post.pdf}
 	\caption{Jodel Alert Activity Diagram Handling Jodel Post}
-	\label{Jodel}
+	\label{Activity Diagram HJP}
 \end{figure}
 \clearpage
 \subsection{Activity diagram - Modifying Database}
@@ -166,7 +210,7 @@ All key components for this application is listed here.\\
 	\centering
 	\includegraphics[height=13cm]{img/Activity_diagram-Modifying_database.pdf}
 	\caption{Jodel Alert Activity Diagram Modifying Database}
-	\label{Jodel}
+	\label{Activity Diagram MD}
 \end{figure}
 \clearpage
 \subsection{Constraints}
@@ -176,7 +220,7 @@ All key components for this application is listed here.\\
 	\centering
 	\includegraphics[height=6cm]{img/designspace.pdf}
 	\caption{Jodel Alert Design Space}
-	\label{Jodel}
+	\label{Design space}
 \end{figure}
 User interface vs no user interface is a big difference. As we stated in requirement ID 13 the user interface should be easy to use and simple. If going for no user interface the users are forced to have a higher level of knowledge to operate the application correctly. Adding a simple keyword can mean knowledge of how databases works and maybe require other programs. With the user interface the user can add a simple keyword without knowing about the underlying backbone of our system.
 This gives the application good usability.\\
@@ -186,14 +230,27 @@ Scalability is also reached with using an SQL database.\\
 
 One of the design issues mentioned before was the use of the Jodel API. This was not open and accessible for the general public, and we did not get any response from the Jodel company. This forced us to choose the path of no API at all.
 \clearpage
-\section{Risk mitigation}
+\subsection{Failure conditions}
+Some of the possible failure conditions that can arise is the following: \\
+\begin{itemize}
+	\item Not receiving authorized token from Jodel
+	\item Server at Linnéstudenterna is down
+	\item Could not retrieve new posts
+\end{itemize}
+Whenever some of these failure conditions occur, the system prompts the user with a message in form of an email. No other actions will be taken after a misevent than only informing the recipient what has gone wrong.
+
+\subsection{One-time operation}
+After installing the Jodel Alert Application, the customer must start the application. This is a one-time operation in order to run the application on the server, which means it will begin scanning and sending emails to the recipient if a keyword is matched.
+
+\subsection{Limitations}
+If a user creates an entry, there are for now not any limitations on how many keywords or email recipients that can be handled by the database.
 (Probably not in the finished version)?
 \section{Class diagram}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[height=12cm]{img/jodelUMLClassDiagram.pdf}
 	\caption{Jodel Alert Class Diagram}
-	\label{Jodel}
+	\label{Class diagram}
 \end{figure}
 \clearpage
 \section{Component Diagram}
@@ -201,7 +258,7 @@ One of the design issues mentioned before was the use of the Jodel API. This was
 	\centering
 	\includegraphics[height=11cm]{img/component_diagram.pdf}
 	\caption{Jodel Alert Component Diagram}
-	\label{Jodel}
+	\label{Component Diagram}
 \end{figure}
 \clearpage
 \section{Sequence Diagram}
@@ -209,17 +266,17 @@ One of the design issues mentioned before was the use of the Jodel API. This was
 	\centering
 	\includegraphics[height=13cm]{img/sequence_diagram1.pdf}
 	\caption{Jodel Alert Sequence Diagram}
-	\label{Jodel}
+	\label{Sequence Diagram}
 \end{figure}
 \clearpage
 \begin{figure}[!h]
 	\centering
 	\includegraphics[height=13cm]{img/sequence_diagram2.pdf}
 	\caption{Jodel Alert Sequence Diagram}
-	\label{Jodel}
+	\label{Sequence Diagram}
 \end{figure}
 \clearpage
-\section{After release}
+\section{After release - Nongoals}
 Some things is always forced to be omitted because of time, budget and other constraints.\\
 
 In version 2.0 of our application we would like to develop the following features:
@@ -231,7 +288,7 @@ In version 2.0 of our application we would like to develop the following feature
 	\centering
 	\includegraphics[height=6cm]{img/jodel.png}
 	\caption{Jodel logo}
-	\label{Jodel}
+	\label{Jodel logo}
 \end{figure}
 
 \end{document}
