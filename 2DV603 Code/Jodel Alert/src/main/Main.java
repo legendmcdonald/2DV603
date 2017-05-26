@@ -1,11 +1,13 @@
 package main;
 
+import java.io.IOException;
+
 public class Main {
 
 	private static Object JodelPostObject;
 	private static String JSONString;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		/*
 		 * Main method requests the post object from the jodel server through the HttpsRequester class,
@@ -16,13 +18,13 @@ public class Main {
 		
 		//while(true){
 			
-			//HttpsRequester requester = new HttpsRequester();
+			HttpsRequester requester = new HttpsRequester();
 			
 			//JodelPostObject = requester.getJodelPosts();
 			
 			@SuppressWarnings("unused")
-			ConvertSearcher cs = new ConvertSearcher(JSONString);
-			
+			ConvertSearcher cs = new ConvertSearcher(requester.getJodelReplies(), false);
+
 		//}
 		
 	}

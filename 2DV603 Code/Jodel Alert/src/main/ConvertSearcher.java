@@ -27,10 +27,10 @@ public class ConvertSearcher {
 	 * Notifier class)
 	 */
 
-	public ConvertSearcher(String JSONstring){
+	public ConvertSearcher(String JSONstring, boolean topic){
 
 		this.JodelPostObject = JodelPostObject;
-		convert(JSONstring, false);
+		convert(JSONstring, topic);
 		//search();
 
 		if(matchFound){
