@@ -2,18 +2,26 @@ package main;
 
 // Jodel post object that contains values specified in class diagram, also matching keyword for reference
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class JodelPost {
 
-	private int postID;
+	@JsonProperty("post_id")
+	private String postID;
+
+	@JsonProperty("message")
 	private String message;
-	private String location;
-	private String matchingKeyword;
+
+	//private String location;
+	//private String matchingKeyword;
 	
-	public int getPostID(){
+	public String getPostID(){
 		return postID;
 	}
 	
-	public void setPostID(int postID){
+	public void setPostID(String postID){
 		this.postID = postID;
 	}
 	
@@ -25,7 +33,7 @@ public class JodelPost {
 		this.message = message;
 	}
 
-	public String getLocation() {
+	/*public String getLocation() {
 		return location;
 	}
 
@@ -40,5 +48,5 @@ public class JodelPost {
 	public void setMatchingKeyword(String matchingKeyword) {
 		this.matchingKeyword = matchingKeyword;
 	}
-	
+	*/
 }
