@@ -45,14 +45,14 @@ public class HttpsRequester  {
 		
 	}
 
-	public String getJodelReplies() throws IOException {
+	public String getJodelReplies(String postID) throws IOException {
 
 		Socket socket = new Socket("127.0.0.1",4955);
 
 		DataOutputStream outToServer = new DataOutputStream(socket.getOutputStream());
 		BufferedReader inFromServer = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
-		outToServer.write(headerGet("5925c4d58393aa100007eee8"));
+		outToServer.write(headerGet("replies/"+postID));
 		outToServer.flush();
 
 		String response="";
@@ -71,7 +71,6 @@ public class HttpsRequester  {
 			if (contentReached) {
 				response+=newResponse;
 			}
-			System.out.println(newResponse);
 		}
 		System.out.println(response);
 

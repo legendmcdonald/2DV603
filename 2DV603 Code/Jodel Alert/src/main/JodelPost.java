@@ -16,7 +16,9 @@ public class JodelPost {
 
 	//private String location;
 	//private String matchingKeyword;
-	
+
+	private boolean alreadySearched= false;
+
 	public String getPostID(){
 		return postID;
 	}
@@ -31,6 +33,14 @@ public class JodelPost {
 
 	public void setMessage(String message) {
 		this.message = message;
+	}
+
+	public boolean getAlreadySearched() {
+		return alreadySearched;
+	}
+
+	public void setAlreadySearched(boolean alreadySearched) {
+		this.alreadySearched = alreadySearched;
 	}
 
 	/*public String getLocation() {

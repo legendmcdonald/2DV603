@@ -23,7 +23,7 @@ public class Main {
 			//JodelPostObject = requester.getJodelPosts();
 			
 			@SuppressWarnings("unused")
-			ConvertSearcher cs = new ConvertSearcher(requester.getJodelReplies(), false);
+			ConvertSearcher cs = new ConvertSearcher(requester.getJodelReplies("592949557354471000dd228c"), false);
 
 		//}
 		
