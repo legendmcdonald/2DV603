@@ -37,10 +37,10 @@ public class HttpsRequester  {
 			if (contentReached) {
 				response+=newResponse;
 			}
-			System.out.println(newResponse);
 		}
 		System.out.println(response);
-		
+
+		socket.close();
 		return response;
 		
 	}
@@ -74,9 +74,11 @@ public class HttpsRequester  {
 		}
 		System.out.println(response);
 
+		socket.close();
 		return response;
 	}
 
+	//More header fields will need to be added for the real server
 	public byte[] headerGet(String purpose){
 
 		final String GET = "GET /";

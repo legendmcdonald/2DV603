@@ -20,14 +20,16 @@ public class Main {
 
 		while(true) {
 
+			//Get the topics first
 			cs.convertTopics(requester.getJodelTopics());
 
+			//For each topic, get all the replies and search for keywords
 			for (JodelPost jodel : cs.getTopics().getRecent()) {
 				cs.convertReplies(requester.getJodelReplies(jodel.getPostID()));
 			}
 
 			try {
-				Thread.sleep(10000000);
+				Thread.sleep(20000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

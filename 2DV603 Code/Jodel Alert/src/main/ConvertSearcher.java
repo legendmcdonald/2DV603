@@ -30,37 +30,16 @@ public class ConvertSearcher {
 	 * Notifier class)
 	 */
 
-	public ConvertSearcher(){
+	public ConvertSearcher(){}
 
-
-	}
-
-	public ConvertSearcher(String JSONstring, boolean topic){
-
-		this.JodelPostObject = JodelPostObject;
-		//convert(JSONstring, topic);
-		//search();
-
-		if(matchFound){
-
-			//post.setMatchingKeyword(matchingKeyword);
-
-
-
-		}
-
-	}
-
-	// TODO : Maybe Benjamin can implement the convert method since Im not sure how the json object will look.
-
-
+	//Topics or "recent" have different structure from "replies"
 	public void convertTopics(String JSONString){
 
 		ObjectMapper mapper = new ObjectMapper();
 
 		try {
 			mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-			topics = mapper.readValue(JSONString, TopicsPosts.class);
+			topics = mapper.readValue(JSONString.toLowerCase(), TopicsPosts.class);
 
 			String prettyTopics = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(topics);
 			System.out.println(prettyTopics);
@@ -80,7 +59,7 @@ public class ConvertSearcher {
 
 		try {
 			mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-			replies = mapper.readValue(JSONString, RepliesPosts.class);
+			replies = mapper.readValue(JSONString.toLowerCase(), RepliesPosts.class);
 
 			String prettyTopics = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(replies);
 			System.out.println(prettyTopics);
@@ -92,6 +71,7 @@ public class ConvertSearcher {
 			e.printStackTrace();
 		}
 
+		//Jodel "replies" consist of 1 "header" jodel and then a list of replies
 		if(search(replies.getDetails())){
 			Notifier notifier = new Notifier(replies.getDetails());
 		}
@@ -108,17 +88,13 @@ public class ConvertSearcher {
 		if(!alreadySearchedID.contains(jodel.getPostID())){
 			DBhandler db = new DBhandler();
 
-			ArrayList<String> keywords = new ArrayList<String>(db.getKeywords());
+			//ArrayList<String> keywords = new ArrayList<String>(db.getKeywords());
 
-			/*
-			for(String keyword: keywords ){
-				if(jodel.getMessage().contains(keyword)){
-
-				}
-			}*/
+			//test
+			ArrayList<String> keywords = testKeywordSearch();
 
 			// array of all words in the post is gotten
-			String[] postWords = post.getMessage().split(" ");
+			String[] postWords = jodel.getMessage().split(" ");
 
 			// words are compared with keywords, if match found then boolean is true and matchingKeyword is set in JodelPost Object
 			for(int i = 0; i < postWords.length; i++){
@@ -127,18 +103,36 @@ public class ConvertSearcher {
 
 					if(postWords[i].equals(keywords.get(j))){
 
-						//matchFound = true;
 						matchingKeyword = keywords.get(j);
+						System.out.println("===============================================================");
+						System.out.println("--------------------------keyword found------------------------");
+						System.out.println("--------------------------"+matchingKeyword+"------------------------");
+						System.out.println("===============================================================");
+						//matchFound = true;
+
+						//All searched unique jodel posts are added in a "searched" list. TODO: implement a fixed size list, maybe 500
+						alreadySearchedID.add(jodel.getPostID());
 						return true;
 					}
 
 				}
 
 			}
-			alreadySearchedID.add(jodel.getPostID());
-		}
 
+
+		}
+		//All searched unique jodel posts are added in a "searched" list. TODO: implement a fixed size list, maybe 500
+		alreadySearchedID.add(jodel.getPostID());
 		return false;
+	}
+
+	public ArrayList<String> testKeywordSearch(){
+
+		ArrayList<String> testlist = new ArrayList<>();
+		testlist.add(("Behöver").toLowerCase());
+		testlist.add(("person").toLowerCase());
+
+		return testlist;
 	}
 
 	public JodelPost getPost() {return post;}
