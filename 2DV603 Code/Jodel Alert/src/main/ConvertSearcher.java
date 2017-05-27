@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ConvertSearcher {
 
@@ -19,6 +20,8 @@ public class ConvertSearcher {
 
 	private Boolean matchFound = false;
 	private String matchingKeyword;
+
+	private List<String> alreadySearchedID = new ArrayList<>();
 	
 	/*
 	 * Convert searcher first convert json object to strings and stores those values in the JodelPost object.
@@ -27,18 +30,22 @@ public class ConvertSearcher {
 	 * Notifier class)
 	 */
 
+	public ConvertSearcher(){
+
+
+	}
+
 	public ConvertSearcher(String JSONstring, boolean topic){
 
 		this.JodelPostObject = JodelPostObject;
-		convert(JSONstring, topic);
+		//convert(JSONstring, topic);
 		//search();
 
 		if(matchFound){
 
 			//post.setMatchingKeyword(matchingKeyword);
 
-			@SuppressWarnings("unused")
-			Notifier notifier = new Notifier(post);
+
 
 		}
 
@@ -46,77 +53,95 @@ public class ConvertSearcher {
 
 	// TODO : Maybe Benjamin can implement the convert method since Im not sure how the json object will look.
 
-	private void convert(String JSONString, boolean topic){
+
+	public void convertTopics(String JSONString){
 
 		ObjectMapper mapper = new ObjectMapper();
 
-		if(topic){
+		try {
+			mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+			topics = mapper.readValue(JSONString, TopicsPosts.class);
 
-			try {
-				mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-				topics = mapper.readValue(JSONString, TopicsPosts.class);
-
-				String prettyTopics = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(topics);
-				System.out.println(prettyTopics);
-			}catch (JsonGenerationException e) {
-				e.printStackTrace();
-			}catch (JsonMappingException e) {
-				e.printStackTrace();
-			}catch (IOException e) {
-				e.printStackTrace();
-			}
-
-
-		}else if(!topic){
-			try {
-				mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-				replies = mapper.readValue(JSONString, RepliesPosts.class);
-
-				String prettyTopics = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(replies);
-				System.out.println(prettyTopics);
-			}catch (JsonGenerationException e) {
-				e.printStackTrace();
-			}catch (JsonMappingException e) {
-				e.printStackTrace();
-			}catch (IOException e) {
-				e.printStackTrace();
-			}
-
-
+			String prettyTopics = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(topics);
+			System.out.println(prettyTopics);
+		}catch (JsonGenerationException e) {
+			e.printStackTrace();
+		}catch (JsonMappingException e) {
+			e.printStackTrace();
+		}catch (IOException e) {
+			e.printStackTrace();
 		}
-
-			
-		/*post.setPostID();
-		post.setMessage();
-		post.setLocation();*/
 
 	}
 
-	private void search(){
+	public void convertReplies(String JSONString){
 
-		DBhandler db = new DBhandler();
+		ObjectMapper mapper = new ObjectMapper();
 
-		ArrayList<String> keywords = new ArrayList<String>(db.getKeywords());
+		try {
+			mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+			replies = mapper.readValue(JSONString, RepliesPosts.class);
 
-		// array of all words in the post is gotten
-		String[] postWords = post.getMessage().split(" ");
+			String prettyTopics = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(replies);
+			System.out.println(prettyTopics);
+		}catch (JsonGenerationException e) {
+			e.printStackTrace();
+		}catch (JsonMappingException e) {
+			e.printStackTrace();
+		}catch (IOException e) {
+			e.printStackTrace();
+		}
 
-		// words are compared with keywords, if match found then boolean is true and matchingKeyword is set in JodelPost Object
-		for(int i = 0; i < postWords.length; i++){
+		if(search(replies.getDetails())){
+			Notifier notifier = new Notifier(replies.getDetails());
+		}
+		for (JodelPost jodel : replies.getReplies()) {
+			if(search(jodel)){
+				Notifier notifier = new Notifier(jodel);
+			}
+		}
 
-			for(int j = 0; j < keywords.size(); j++){
+	}
 
-				if(postWords[i].equals(keywords.get(j))){
+	private boolean search(JodelPost jodel){
 
-					matchFound = true;
-					matchingKeyword = keywords.get(j);
+		if(!alreadySearchedID.contains(jodel.getPostID())){
+			DBhandler db = new DBhandler();
+
+			ArrayList<String> keywords = new ArrayList<String>(db.getKeywords());
+
+			/*
+			for(String keyword: keywords ){
+				if(jodel.getMessage().contains(keyword)){
+
+				}
+			}*/
+
+			// array of all words in the post is gotten
+			String[] postWords = post.getMessage().split(" ");
+
+			// words are compared with keywords, if match found then boolean is true and matchingKeyword is set in JodelPost Object
+			for(int i = 0; i < postWords.length; i++){
+
+				for(int j = 0; j < keywords.size(); j++){
+
+					if(postWords[i].equals(keywords.get(j))){
+
+						//matchFound = true;
+						matchingKeyword = keywords.get(j);
+						return true;
+					}
 
 				}
 
 			}
-
+			alreadySearchedID.add(jodel.getPostID());
 		}
 
+		return false;
 	}
 
+	public JodelPost getPost() {return post;}
+	public RepliesPosts getReplies() {return replies;}
+	public TopicsPosts getTopics() {return topics;}
 }
