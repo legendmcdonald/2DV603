@@ -85,10 +85,7 @@ public class ConvertSearcher {
 		if(!alreadySearchedID.contains(jodel.getPostID())){
 			DBhandler db = new DBhandler();
 
-			//ArrayList<String> keywords = new ArrayList<String>(db.getKeywords());
-
-			//test
-			ArrayList<String> keywords = testKeywordSearch();
+			ArrayList<String> keywords = db.getKeywords();
 
 			// array of all words in the post is gotten
 			String[] postWords = jodel.getMessage().split(" ");
@@ -121,15 +118,6 @@ public class ConvertSearcher {
 		//All searched unique jodel posts are added in a "searched" list. TODO: implement a fixed size list, maybe 500
 		alreadySearchedID.add(jodel.getPostID());
 		return false;
-	}
-
-	public ArrayList<String> testKeywordSearch(){
-
-		ArrayList<String> testlist = new ArrayList<>();
-		testlist.add(("Behöver").toLowerCase());
-		testlist.add(("person").toLowerCase());
-
-		return testlist;
 	}
 
 	public RepliesPosts getReplies() {return replies;}
