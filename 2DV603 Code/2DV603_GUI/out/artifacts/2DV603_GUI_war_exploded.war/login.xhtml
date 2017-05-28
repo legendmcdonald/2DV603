@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+</h:head>
+
+<div class="top">
+    <h1>Log In</h1>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="loginBox">
+    <h:form>
+        <h:panelGrid columns="2" cellspacing="1">
+            <h:outputText value="Email/User: "/><h:inputText value="#{email.email}"/>
+            <h:outputText value="Password: "/><h:inputSecret value="#{email.password}"/>
+            <h:commandButton value="Save" action="#{email.validUser}"/>
+        </h:panelGrid>
+    </h:form>
+</div>
+
+</html>

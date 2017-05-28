@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="cdi-api">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../2DV603_GUI/lib/cdi-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../2DV603_GUI/lib/javax-inject.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../2DV603_GUI/lib/javax.faces-2.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../2DV603_GUI/lib/jstl-1.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../2DV603_GUI/lib/primefaces-5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../2DV603_GUI/lib/primefaces-5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

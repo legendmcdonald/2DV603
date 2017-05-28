@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+</h:head>
+<h:body>
+    <div class="topAdmin">
+        <h1>Welcome Admin</h1>
+    </div>
+
+    <div class="changePass">
+        <h:form>
+            <h:panelGrid columns="3" cellspacing="1">
+                <h:outputText value="Change password"/>
+                <h:inputSecret value="#{email.password}"/>
+                <h:commandButton value="Save" action="#{email.changePwd(email.email)}"/>
+            </h:panelGrid>
+        </h:form>
+    </div>
+
+    <div class="middle"/>
+
+    <div class="content">
+    <div class="testAdmin">
+        <h:form>
+            <h:panelGrid columns="3" cellspacing="1">
+                <h:outputText value="Enter new keyword"/><h:inputText value="#{keyword.keyword}"/><h:commandButton value="Save" action="#{keyword.addKeyword}"/>
+            </h:panelGrid>
+        </h:form>
+    </div>
+
+    <div class="testAdminEmail">
+        <h:form>
+            <h:panelGrid columns="2" cellspacing="1">
+                <h:outputText value="Enter new mail/user"/><h:inputText value="#{email.email}"/>
+                <h:outputText value="Enter password"/><h:inputSecret value="#{email.password}"/>
+                <h:outputText value="Admin or User"/><h:inputText value="#{email.adminOrUser}"/>
+                <h:commandButton value="Save" action="#{email.addEmail}"/>
+            </h:panelGrid>
+        </h:form>
+    </div>
+
+    <div class="middleAdmin"/>
+
+    <div class="boxAdmin">
+        <h:form>
+            <h:dataTable value="#{keyword.keywords}" var="keyVar">
+                <h:column>
+                    <f:facet name="header">Keyword</f:facet>
+                    #{keyVar.keyword}
+                </h:column>
+                <h:column>
+                    <h:commandButton value="X" action="#{keyword.deleteKeyword(keyVar.keyword)}"/>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </div>
+
+    <div class="boxAdminEmail">
+        <h:form>
+            <h:dataTable value="#{email.emails}" var="mailVar">
+                <h:column>
+                    <f:facet name="header">Email</f:facet>
+                    #{mailVar.email}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Admin or User</f:facet>
+                    #{mailVar.adminOrUser}
+                </h:column>
+                <h:column>
+                    <h:commandButton value="X" action="#{email.deleteEmail(mailVar.email)}"/>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </div>
+
+    </div>
+
+</h:body>
+</html>

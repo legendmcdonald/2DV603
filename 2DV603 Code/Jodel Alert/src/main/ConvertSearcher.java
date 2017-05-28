@@ -25,9 +25,9 @@ public class ConvertSearcher {
 	
 	/*
 	 * Convert searcher first convert json object to strings and stores those values in the JodelPost object.
-	 * Then the DBhandler is used in the search method to get the list of keywords. If match is found,
-	 * matchFound boolean is set to true and Notifier class is called to send emails (JodelPost object passed to
-	 * Notifier class)
+	 * Then the DBhandlerJonathan is used in the search method to get the list of keywords. If match is found,
+	 * matchFound boolean is set to true and NotifierJonathan class is called to send emails (JodelPost object passed to
+	 * NotifierJonathan class)
 	 */
 
 	public ConvertSearcher(){}
@@ -73,11 +73,11 @@ public class ConvertSearcher {
 
 		//Jodel "replies" consist of 1 "header" jodel and then a list of replies
 		if(search(replies.getDetails())){
-			Notifier notifier = new Notifier(replies.getDetails());
+			NotifierJonathan notifier = new NotifierJonathan(replies.getDetails());
 		}
 		for (JodelPost jodel : replies.getReplies()) {
 			if(search(jodel)){
-				Notifier notifier = new Notifier(jodel);
+				NotifierJonathan notifier = new NotifierJonathan(jodel);
 			}
 		}
 
@@ -86,7 +86,7 @@ public class ConvertSearcher {
 	private boolean search(JodelPost jodel){
 
 		if(!alreadySearchedID.contains(jodel.getPostID())){
-			DBhandler db = new DBhandler();
+			DBhandlerJonathan db = new DBhandlerJonathan();
 
 			//ArrayList<String> keywords = new ArrayList<String>(db.getKeywords());
 
