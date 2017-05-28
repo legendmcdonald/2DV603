@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .box{
     width: 500px;
     min-height: 300px;
@@ -146,4 +147,154 @@ body{
 .loginBox form{
     margin-left: 20%;
     margin-top: 2%;
+=======
+.box{
+    width: 500px;
+    min-height: 300px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    text-align: center;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.boxAdmin{
+    width: 500px;
+    min-height: 300px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    text-align: center;
+    display: block;
+    text-align: center;
+    float: left;
+    margin-right: 5%;
+}
+
+.boxAdminEmail{
+    width: 500px;
+    min-height: 300px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    text-align: center;
+    display: block;
+    margin: auto;
+    text-align: center;
+    float: left;
+}
+
+.top{
+    height: 100px;
+}
+
+.topAdmin{
+    height: 100px;
+}
+
+.middle{
+    height: 30px;
+}
+
+.middleAdmin{
+    height: 200px;
+}
+
+.test{
+    width: 500px;
+    height: 100px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+
+.testAdmin{
+    width: 500px;
+    height: 150px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    display: block;
+    float: left;
+    margin-right: 5%;
+}
+
+.testAdminEmail{
+    width: 500px;
+    height: 150px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    display: block;
+    float: left;
+    margin-right: 5%;
+}
+
+.test form{
+    margin-left: 13%;
+    margin-top: 6%;
+}
+
+.testAdmin form{
+    margin-left: 13%;
+    margin-top: 12%;
+}
+
+.testAdminEmail form{
+    margin-left: 17%;
+    margin-top: 4%;
+}
+
+.box form{
+    margin-left: 35%;
+}
+
+.boxAdmin form{
+    margin-left: 35%;
+}
+
+.boxAdminEmail form{
+    margin-left: 10%;
+}
+
+.content{
+    margin-left: 18%;
+}
+
+h1{
+    text-align: center;
+}
+
+.changePass{
+    width: 500px;
+    height: 100px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+
+.changePass form{
+    margin-left: 13%;
+    margin-top: 6%;
+}
+
+body{
+    font-family: "Arial", SansSerif;
+}
+
+.loginBox{
+    width: 500px;
+    height: 100px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+
+.loginBox form{
+    margin-left: 20%;
+    margin-top: 2%;
+>>>>>>> c6977ec63546f8ccfdc07f6592b2387727745676
 }

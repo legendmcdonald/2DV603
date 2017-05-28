@@ -26,6 +26,9 @@
     <orderEntry type="library" name="cdi-api" level="project" />
     <orderEntry type="library" name="javax.mail" level="project" />
     <orderEntry type="library" name="demo" level="project" />
+<<<<<<< HEAD
     <orderEntry type="library" name="jackson-annotations-2.8.8" level="project" />
+=======
+>>>>>>> c6977ec63546f8ccfdc07f6592b2387727745676
   </component>
 </module>
